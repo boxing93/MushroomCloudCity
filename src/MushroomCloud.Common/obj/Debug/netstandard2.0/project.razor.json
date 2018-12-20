@@ -1,0 +1,14 @@
+{
+  "ProjectFilePath": "d:\\PROJECTS\\IValchev\\MushroomCloudCity\\src\\MushroomCloud.Common\\MushroomCloud.Common.csproj",
+  "TargetFramework": "netstandard2.0",
+  "TagHelpers": [],
+  "Configuration": {
+    "ConfigurationName": "UnsupportedRazor",
+    "LanguageVersion": "1.0",
+    "Extensions": [
+      {
+        "ExtensionName": "UnsupportedRazorExtension"
+      }
+    ]
+  }
+}
