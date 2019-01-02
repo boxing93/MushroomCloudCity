@@ -1,13 +1,14 @@
 <Project Sdk="Microsoft.NET.Sdk">
-
   <PropertyGroup>
-    <TargetFramework>netstandard2.0</TargetFramework>
+    <TargetFramework>netcoreapp2.1</TargetFramework>
   </PropertyGroup>
-
   <ItemGroup>
-    <PackageReference Include="RawRabbit" Version="1.10.4" />
+    <PackageReference Include="Microsoft.AspNetCore.App" Version="2.1.1"/>
+    <PackageReference Include="RawRabbit" Version="2.0.0-rc5"/>
+    <PackageReference Include="RawRabbit.vNext" Version="2.0.0-beta8"/>
+    <PackageReference Include="RawRabbit.Operations.Publish" Version="*"/>
+    <PackageReference Include="RawRabbit.Operations.Subscribe" Version="*"/>
   </ItemGroup>
-
   <ItemGroup>
     <Reference Include="Microsoft.AspNetCore.Hosting.Abstractions">
       <HintPath>C:\Program Files\dotnet\sdk\NuGetFallbackFolder\microsoft.aspnetcore.hosting.abstractions\2.1.0\lib\netstandard2.0\Microsoft.AspNetCore.Hosting.Abstractions.dll</HintPath>
@@ -19,5 +20,4 @@
       <HintPath>C:\Program Files\dotnet\sdk\NuGetFallbackFolder\microsoft.extensions.hosting\2.1.0\lib\netstandard2.0\Microsoft.Extensions.Hosting.dll</HintPath>
     </Reference>
   </ItemGroup>
-
 </Project>

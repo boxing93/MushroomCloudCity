@@ -1,6 +1,6 @@
 {
-  "ProjectFilePath": "d:\\PROJECTS\\IValchev\\MushroomCloudCity\\src\\MushroomCloud.Common\\MushroomCloud.Common.csproj",
-  "TargetFramework": "netstandard2.0",
+  "ProjectFilePath": "d:\\Projects\\MushroomCloud\\src\\MushroomCloud.Common\\MushroomCloud.Common.csproj",
+  "TargetFramework": "netcoreapp2.1",
   "TagHelpers": [],
   "Configuration": {
     "ConfigurationName": "UnsupportedRazor",

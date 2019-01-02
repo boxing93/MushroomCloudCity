@@ -17,13 +17,13 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{0D304275
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "docs", "docs", "{D9E748C6-4555-4A2A-9596-F352AC789727}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MushroomCloud.Api.Test", "tests\MushroomCloud.Api.Test\MushroomCloud.Api.Test.csproj", "{6368B3EF-FD2F-4A78-8F5B-A6741519205C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MushroomCloud.Api.Test", "tests\MushroomCloud.Api.Test\MushroomCloud.Api.Test.csproj", "{6368B3EF-FD2F-4A78-8F5B-A6741519205C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MushroomCloud.Services.Activities.Test", "tests\MushroomCloud.Services.Activities.Test\MushroomCloud.Services.Activities.Test.csproj", "{D4134127-AFFC-46FA-B60E-E939C4E409EA}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MushroomCloud.Services.Activities.Test", "tests\MushroomCloud.Services.Activities.Test\MushroomCloud.Services.Activities.Test.csproj", "{D4134127-AFFC-46FA-B60E-E939C4E409EA}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MushroomCloud.Common.Test", "tests\MushroomCloud.Common.Test\MushroomCloud.Common.Test.csproj", "{35C6B282-E704-412C-8ED3-1EBDE0DC58F7}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MushroomCloud.Common.Test", "tests\MushroomCloud.Common.Test\MushroomCloud.Common.Test.csproj", "{35C6B282-E704-412C-8ED3-1EBDE0DC58F7}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MushroomCloud.Services.Identity.Test", "tests\MushroomCloud.Services.Identity.Test\MushroomCloud.Services.Identity.Test.csproj", "{201DD4FB-E9FC-45CB-B1A2-76E14840539E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MushroomCloud.Services.Identity.Test", "tests\MushroomCloud.Services.Identity.Test\MushroomCloud.Services.Identity.Test.csproj", "{201DD4FB-E9FC-45CB-B1A2-76E14840539E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

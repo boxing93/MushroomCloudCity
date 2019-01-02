@@ -1,9 +1,0 @@
-D:\PROJECTS\IValchev\MushroomCloudCity\src\MushroomCloud.Common\bin\Debug\netstandard2.0\MushroomCloud.Common.deps.json
-D:\PROJECTS\IValchev\MushroomCloudCity\src\MushroomCloud.Common\bin\Debug\netstandard2.0\MushroomCloud.Common.dll
-D:\PROJECTS\IValchev\MushroomCloudCity\src\MushroomCloud.Common\bin\Debug\netstandard2.0\MushroomCloud.Common.pdb
-D:\PROJECTS\IValchev\MushroomCloudCity\src\MushroomCloud.Common\obj\Debug\netstandard2.0\MushroomCloud.Common.csprojAssemblyReference.cache
-D:\PROJECTS\IValchev\MushroomCloudCity\src\MushroomCloud.Common\obj\Debug\netstandard2.0\MushroomCloud.Common.csproj.CoreCompileInputs.cache
-D:\PROJECTS\IValchev\MushroomCloudCity\src\MushroomCloud.Common\obj\Debug\netstandard2.0\MushroomCloud.Common.AssemblyInfoInputs.cache
-D:\PROJECTS\IValchev\MushroomCloudCity\src\MushroomCloud.Common\obj\Debug\netstandard2.0\MushroomCloud.Common.AssemblyInfo.cs
-D:\PROJECTS\IValchev\MushroomCloudCity\src\MushroomCloud.Common\obj\Debug\netstandard2.0\MushroomCloud.Common.dll
-D:\PROJECTS\IValchev\MushroomCloudCity\src\MushroomCloud.Common\obj\Debug\netstandard2.0\MushroomCloud.Common.pdb

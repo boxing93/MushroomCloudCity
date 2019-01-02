@@ -1,0 +1,8 @@
+D:\Projects\MushroomCloud\src\MushroomCloud.Common\obj\Debug\netcoreapp2.1\MushroomCloud.Common.csproj.CoreCompileInputs.cache
+D:\Projects\MushroomCloud\src\MushroomCloud.Common\obj\Debug\netcoreapp2.1\MushroomCloud.Common.AssemblyInfoInputs.cache
+D:\Projects\MushroomCloud\src\MushroomCloud.Common\obj\Debug\netcoreapp2.1\MushroomCloud.Common.AssemblyInfo.cs
+D:\Projects\MushroomCloud\src\MushroomCloud.Common\bin\Debug\netcoreapp2.1\MushroomCloud.Common.deps.json
+D:\Projects\MushroomCloud\src\MushroomCloud.Common\bin\Debug\netcoreapp2.1\MushroomCloud.Common.dll
+D:\Projects\MushroomCloud\src\MushroomCloud.Common\obj\Debug\netcoreapp2.1\MushroomCloud.Common.csprojAssemblyReference.cache
+D:\Projects\MushroomCloud\src\MushroomCloud.Common\bin\Debug\netcoreapp2.1\MushroomCloud.Common.runtimeconfig.json
+D:\Projects\MushroomCloud\src\MushroomCloud.Common\bin\Debug\netcoreapp2.1\MushroomCloud.Common.runtimeconfig.dev.json

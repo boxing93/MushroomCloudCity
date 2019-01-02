@@ -5,7 +5,7 @@ using System.Text;
 namespace MushroomCloud.Common.Commands
 {
     //Interface for marking
-    interface ICommand
+    public interface ICommand
     {
     }
 }
