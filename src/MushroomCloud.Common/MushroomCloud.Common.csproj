@@ -4,10 +4,11 @@
   </PropertyGroup>
   <ItemGroup>
     <PackageReference Include="Microsoft.AspNetCore.App" Version="2.1.1"/>
-    <PackageReference Include="RawRabbit" Version="2.0.0-rc5"/>
+    <PackageReference Include="Microsoft.AspNetCore.Hosting" Version="2.1.1"/>
     <PackageReference Include="RawRabbit.vNext" Version="2.0.0-beta8"/>
-    <PackageReference Include="RawRabbit.Operations.Publish" Version="*"/>
-    <PackageReference Include="RawRabbit.Operations.Subscribe" Version="*"/>
+    <PackageReference Include="RawRabbit.Operations.Subscribe" Version="2.0.0-beta8"/>
+    <PackageReference Include="RawRabbit" Version="2.0.0-beta8"/>
+    <PackageReference Include="RawRabbit.Operations.Publish" Version="2.0.0-beta8"/>
   </ItemGroup>
   <ItemGroup>
     <Reference Include="Microsoft.AspNetCore.Hosting.Abstractions">
