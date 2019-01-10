@@ -21,3 +21,14 @@ D:\PROJECTS\IValchev\MushroomCloudCity\src\MushroomCloud.Services.Activities\obj
 D:\PROJECTS\IValchev\MushroomCloudCity\src\MushroomCloud.Services.Activities\obj\Debug\netcoreapp2.1\MushroomCloud.Services.Activities.RazorAssemblyInfo.cs
 D:\PROJECTS\IValchev\MushroomCloudCity\src\MushroomCloud.Services.Activities\obj\Debug\netcoreapp2.1\MushroomCloud.Services.Activities.AssemblyInfoInputs.cache
 D:\PROJECTS\IValchev\MushroomCloudCity\src\MushroomCloud.Services.Activities\obj\Debug\netcoreapp2.1\MushroomCloud.Services.Activities.AssemblyInfo.cs
+d:\PROJECTS\IValchev\MushroomCloudCity\src\MushroomCloud.Services.Activities\bin\Debug\netcoreapp2.1\MushroomCloud.Services.Activities.deps.json
+d:\PROJECTS\IValchev\MushroomCloudCity\src\MushroomCloud.Services.Activities\bin\Debug\netcoreapp2.1\MushroomCloud.Services.Activities.runtimeconfig.json
+d:\PROJECTS\IValchev\MushroomCloudCity\src\MushroomCloud.Services.Activities\bin\Debug\netcoreapp2.1\MushroomCloud.Services.Activities.runtimeconfig.dev.json
+d:\PROJECTS\IValchev\MushroomCloudCity\src\MushroomCloud.Services.Activities\bin\Debug\netcoreapp2.1\MushroomCloud.Services.Activities.dll
+d:\PROJECTS\IValchev\MushroomCloudCity\src\MushroomCloud.Services.Activities\bin\Debug\netcoreapp2.1\MushroomCloud.Services.Activities.pdb
+d:\PROJECTS\IValchev\MushroomCloudCity\src\MushroomCloud.Services.Activities\bin\Debug\netcoreapp2.1\MushroomCloud.Common.dll
+d:\PROJECTS\IValchev\MushroomCloudCity\src\MushroomCloud.Services.Activities\bin\Debug\netcoreapp2.1\MushroomCloud.Common.pdb
+d:\PROJECTS\IValchev\MushroomCloudCity\src\MushroomCloud.Services.Activities\obj\Debug\netcoreapp2.1\MushroomCloud.Services.Activities.RazorTargetAssemblyInfo.cache
+d:\PROJECTS\IValchev\MushroomCloudCity\src\MushroomCloud.Services.Activities\obj\Debug\netcoreapp2.1\MushroomCloud.Services.Activities.csproj.CopyComplete
+d:\PROJECTS\IValchev\MushroomCloudCity\src\MushroomCloud.Services.Activities\obj\Debug\netcoreapp2.1\MushroomCloud.Services.Activities.dll
+d:\PROJECTS\IValchev\MushroomCloudCity\src\MushroomCloud.Services.Activities\obj\Debug\netcoreapp2.1\MushroomCloud.Services.Activities.pdb

@@ -5695,11 +5695,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "d:\\PROJECTS\\IValchev\\MushroomCloudCity\\tests\\MushroomCloud.Api.Test\\MushroomCloud.Api.Test.csproj",
+      "projectUniqueName": "D:\\PROJECTS\\IValchev\\MushroomCloudCity\\tests\\MushroomCloud.Api.Test\\MushroomCloud.Api.Test.csproj",
       "projectName": "MushroomCloud.Api.Test",
-      "projectPath": "d:\\PROJECTS\\IValchev\\MushroomCloudCity\\tests\\MushroomCloud.Api.Test\\MushroomCloud.Api.Test.csproj",
+      "projectPath": "D:\\PROJECTS\\IValchev\\MushroomCloudCity\\tests\\MushroomCloud.Api.Test\\MushroomCloud.Api.Test.csproj",
       "packagesPath": "C:\\Users\\sboris\\.nuget\\packages\\",
-      "outputPath": "d:\\PROJECTS\\IValchev\\MushroomCloudCity\\tests\\MushroomCloud.Api.Test\\obj\\",
+      "outputPath": "D:\\PROJECTS\\IValchev\\MushroomCloudCity\\tests\\MushroomCloud.Api.Test\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -5742,7 +5742,6 @@
             "version": "[15.7.0, )"
           },
           "Microsoft.NETCore.App": {
-            "suppressParent": "All",
             "target": "Package",
             "version": "[2.1.0, )",
             "autoReferenced": true

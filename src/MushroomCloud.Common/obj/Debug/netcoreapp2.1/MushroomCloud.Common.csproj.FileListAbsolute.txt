@@ -14,3 +14,6 @@ D:\PROJECTS\IValchev\MushroomCloudCity\src\MushroomCloud.Common\bin\Debug\netcor
 D:\PROJECTS\IValchev\MushroomCloudCity\src\MushroomCloud.Common\bin\Debug\netcoreapp2.1\MushroomCloud.Common.runtimeconfig.json
 D:\PROJECTS\IValchev\MushroomCloudCity\src\MushroomCloud.Common\bin\Debug\netcoreapp2.1\MushroomCloud.Common.runtimeconfig.dev.json
 D:\PROJECTS\IValchev\MushroomCloudCity\src\MushroomCloud.Common\bin\Debug\netcoreapp2.1\MushroomCloud.Common.dll
+d:\PROJECTS\IValchev\MushroomCloudCity\src\MushroomCloud.Common\bin\Debug\netcoreapp2.1\MushroomCloud.Common.pdb
+d:\PROJECTS\IValchev\MushroomCloudCity\src\MushroomCloud.Common\obj\Debug\netcoreapp2.1\MushroomCloud.Common.dll
+d:\PROJECTS\IValchev\MushroomCloudCity\src\MushroomCloud.Common\obj\Debug\netcoreapp2.1\MushroomCloud.Common.pdb

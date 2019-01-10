@@ -5714,11 +5714,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "d:\\PROJECTS\\IValchev\\MushroomCloudCity\\tests\\MushroomCloud.Services.Activities.Test\\MushroomCloud.Services.Activities.Test.csproj",
+      "projectUniqueName": "D:\\PROJECTS\\IValchev\\MushroomCloudCity\\tests\\MushroomCloud.Services.Activities.Test\\MushroomCloud.Services.Activities.Test.csproj",
       "projectName": "MushroomCloud.Services.Activities.Test",
-      "projectPath": "d:\\PROJECTS\\IValchev\\MushroomCloudCity\\tests\\MushroomCloud.Services.Activities.Test\\MushroomCloud.Services.Activities.Test.csproj",
+      "projectPath": "D:\\PROJECTS\\IValchev\\MushroomCloudCity\\tests\\MushroomCloud.Services.Activities.Test\\MushroomCloud.Services.Activities.Test.csproj",
       "packagesPath": "C:\\Users\\sboris\\.nuget\\packages\\",
-      "outputPath": "d:\\PROJECTS\\IValchev\\MushroomCloudCity\\tests\\MushroomCloud.Services.Activities.Test\\obj\\",
+      "outputPath": "D:\\PROJECTS\\IValchev\\MushroomCloudCity\\tests\\MushroomCloud.Services.Activities.Test\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -5753,7 +5753,6 @@
             "version": "[15.7.0, )"
           },
           "Microsoft.NETCore.App": {
-            "suppressParent": "All",
             "target": "Package",
             "version": "[2.1.0, )",
             "autoReferenced": true

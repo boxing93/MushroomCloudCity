@@ -7,6 +7,8 @@ using Microsoft.AspNetCore;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.Logging;
+using MushroomCloud.Common.Commands.ActivitiesCommand;
+using MushroomCloud.Common.Services;
 
 namespace MushroomCloud.Services.Identity
 {
@@ -14,11 +16,11 @@ namespace MushroomCloud.Services.Identity
     {
         public static void Main(string[] args)
         {
-            CreateWebHostBuilder(args).Build().Run();
+            HostedService.Create<Startup>(args)
+            .UseRabbitMq()
+            .SubscribeToCommand<CreateActivity>()
+            .Build()
+            .Run();        
         }
-
-        public static IWebHostBuilder CreateWebHostBuilder(string[] args) =>
-            WebHost.CreateDefaultBuilder(args)
-                .UseStartup<Startup>();
     }
 }

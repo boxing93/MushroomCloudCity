@@ -2692,6 +2692,20 @@
           "lib/netstandard1.5/RawRabbit.dll": {}
         }
       },
+      "RawRabbit.DependencyInjection.ServiceCollection/2.0.0-beta8": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Extensions.DependencyInjection": "1.0.2",
+          "NETStandard.Library": "1.6.1",
+          "RawRabbit": "2.0.0-beta8"
+        },
+        "compile": {
+          "lib/netstandard1.5/RawRabbit.DependencyInjection.ServiceCollection.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard1.5/RawRabbit.DependencyInjection.ServiceCollection.dll": {}
+        }
+      },
       "RawRabbit.Operations.Publish/2.0.0-beta8": {
         "type": "package",
         "dependencies": {
@@ -4567,6 +4581,7 @@
           "Microsoft.AspNetCore.App": "2.1.1",
           "Microsoft.AspNetCore.Hosting": "2.1.1",
           "RawRabbit": "2.0.0-beta8",
+          "RawRabbit.DependencyInjection.ServiceCollection": "2.0.0-beta8",
           "RawRabbit.Operations.Publish": "2.0.0-beta8",
           "RawRabbit.Operations.Subscribe": "2.0.0-beta8",
           "RawRabbit.vNext": "2.0.0-beta8"
@@ -7238,6 +7253,17 @@
         "lib/netstandard1.5/RawRabbit.dll",
         "rawrabbit.2.0.0-beta8.nupkg.sha512",
         "rawrabbit.nuspec"
+      ]
+    },
+    "RawRabbit.DependencyInjection.ServiceCollection/2.0.0-beta8": {
+      "sha512": "1Ol7ThyJjqIUDTGuPXPTgNype6lCiy8IGp8Hqh/PUWZPYpYEnNip92BFAGsey9QoCfqw8nzPdW1/jk+Ic01BAg==",
+      "type": "package",
+      "path": "rawrabbit.dependencyinjection.servicecollection/2.0.0-beta8",
+      "files": [
+        "lib/net451/RawRabbit.DependencyInjection.ServiceCollection.dll",
+        "lib/netstandard1.5/RawRabbit.DependencyInjection.ServiceCollection.dll",
+        "rawrabbit.dependencyinjection.servicecollection.2.0.0-beta8.nupkg.sha512",
+        "rawrabbit.dependencyinjection.servicecollection.nuspec"
       ]
     },
     "RawRabbit.Operations.Publish/2.0.0-beta8": {
@@ -12076,11 +12102,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "d:\\PROJECTS\\IValchev\\MushroomCloudCity\\src\\MushroomCloud.Services.Activities\\MushroomCloud.Services.Activities.csproj",
+      "projectUniqueName": "D:\\PROJECTS\\IValchev\\MushroomCloudCity\\src\\MushroomCloud.Services.Activities\\MushroomCloud.Services.Activities.csproj",
       "projectName": "MushroomCloud.Services.Activities",
-      "projectPath": "d:\\PROJECTS\\IValchev\\MushroomCloudCity\\src\\MushroomCloud.Services.Activities\\MushroomCloud.Services.Activities.csproj",
+      "projectPath": "D:\\PROJECTS\\IValchev\\MushroomCloudCity\\src\\MushroomCloud.Services.Activities\\MushroomCloud.Services.Activities.csproj",
       "packagesPath": "C:\\Users\\sboris\\.nuget\\packages\\",
-      "outputPath": "d:\\PROJECTS\\IValchev\\MushroomCloudCity\\src\\MushroomCloud.Services.Activities\\obj\\",
+      "outputPath": "D:\\PROJECTS\\IValchev\\MushroomCloudCity\\src\\MushroomCloud.Services.Activities\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -12099,8 +12125,8 @@
       "frameworks": {
         "netcoreapp2.1": {
           "projectReferences": {
-            "d:\\PROJECTS\\IValchev\\MushroomCloudCity\\src\\MushroomCloud.Common\\MushroomCloud.Common.csproj": {
-              "projectPath": "d:\\PROJECTS\\IValchev\\MushroomCloudCity\\src\\MushroomCloud.Common\\MushroomCloud.Common.csproj"
+            "D:\\PROJECTS\\IValchev\\MushroomCloudCity\\src\\MushroomCloud.Common\\MushroomCloud.Common.csproj": {
+              "projectPath": "D:\\PROJECTS\\IValchev\\MushroomCloudCity\\src\\MushroomCloud.Common\\MushroomCloud.Common.csproj"
             }
           }
         }
