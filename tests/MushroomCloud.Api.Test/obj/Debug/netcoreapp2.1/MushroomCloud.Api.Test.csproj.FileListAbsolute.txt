@@ -26,17 +26,3 @@ D:\Projects\MushroomCloud\tests\MushroomCloud.Api.Test\obj\Debug\netcoreapp2.1\M
 D:\Projects\MushroomCloud\tests\MushroomCloud.Api.Test\obj\Debug\netcoreapp2.1\MushroomCloud.Api.Test.AssemblyInfo.cs
 D:\Projects\MushroomCloud\tests\MushroomCloud.Api.Test\obj\Debug\netcoreapp2.1\MushroomCloud.Api.Test.dll
 D:\Projects\MushroomCloud\tests\MushroomCloud.Api.Test\obj\Debug\netcoreapp2.1\MushroomCloud.Api.Test.pdb
-D:\PROJECTS\IValchev\MushroomCloudCity\tests\MushroomCloud.Api.Test\bin\Debug\netcoreapp2.1\Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.dll
-D:\PROJECTS\IValchev\MushroomCloudCity\tests\MushroomCloud.Api.Test\bin\Debug\netcoreapp2.1\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.Interface.dll
-D:\PROJECTS\IValchev\MushroomCloudCity\tests\MushroomCloud.Api.Test\bin\Debug\netcoreapp2.1\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.dll
-D:\PROJECTS\IValchev\MushroomCloudCity\tests\MushroomCloud.Api.Test\bin\Debug\netcoreapp2.1\MushroomCloud.Api.Test.deps.json
-D:\PROJECTS\IValchev\MushroomCloudCity\tests\MushroomCloud.Api.Test\bin\Debug\netcoreapp2.1\MushroomCloud.Api.Test.runtimeconfig.json
-D:\PROJECTS\IValchev\MushroomCloudCity\tests\MushroomCloud.Api.Test\bin\Debug\netcoreapp2.1\MushroomCloud.Api.Test.runtimeconfig.dev.json
-D:\PROJECTS\IValchev\MushroomCloudCity\tests\MushroomCloud.Api.Test\bin\Debug\netcoreapp2.1\MushroomCloud.Api.Test.dll
-D:\PROJECTS\IValchev\MushroomCloudCity\tests\MushroomCloud.Api.Test\bin\Debug\netcoreapp2.1\MushroomCloud.Api.Test.pdb
-D:\PROJECTS\IValchev\MushroomCloudCity\tests\MushroomCloud.Api.Test\obj\Debug\netcoreapp2.1\MushroomCloud.Api.Test.csprojAssemblyReference.cache
-D:\PROJECTS\IValchev\MushroomCloudCity\tests\MushroomCloud.Api.Test\obj\Debug\netcoreapp2.1\MushroomCloud.Api.Test.csproj.CoreCompileInputs.cache
-D:\PROJECTS\IValchev\MushroomCloudCity\tests\MushroomCloud.Api.Test\obj\Debug\netcoreapp2.1\MushroomCloud.Api.Test.AssemblyInfoInputs.cache
-D:\PROJECTS\IValchev\MushroomCloudCity\tests\MushroomCloud.Api.Test\obj\Debug\netcoreapp2.1\MushroomCloud.Api.Test.AssemblyInfo.cs
-D:\PROJECTS\IValchev\MushroomCloudCity\tests\MushroomCloud.Api.Test\obj\Debug\netcoreapp2.1\MushroomCloud.Api.Test.dll
-D:\PROJECTS\IValchev\MushroomCloudCity\tests\MushroomCloud.Api.Test\obj\Debug\netcoreapp2.1\MushroomCloud.Api.Test.pdb

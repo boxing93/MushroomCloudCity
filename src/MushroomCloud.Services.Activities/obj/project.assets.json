@@ -4574,6 +4574,21 @@
           "lib/netstandard1.3/System.Xml.XPath.XDocument.dll": {}
         }
       },
+      "MushroomCloud.Api/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v2.1",
+        "dependencies": {
+          "Microsoft.AspNetCore.App": "2.1.1",
+          "Microsoft.NETCore.App": "2.1.0",
+          "MushroomCloud.Common": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/MushroomCloud.Api.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/MushroomCloud.Api.dll": {}
+        }
+      },
       "MushroomCloud.Common/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v2.1",
@@ -12082,6 +12097,11 @@
         "system.xml.xpath.xdocument.nuspec"
       ]
     },
+    "MushroomCloud.Api/1.0.0": {
+      "type": "project",
+      "path": "../MushroomCloud.Api/MushroomCloud.Api.csproj",
+      "msbuildProject": "../MushroomCloud.Api/MushroomCloud.Api.csproj"
+    },
     "MushroomCloud.Common/1.0.0": {
       "type": "project",
       "path": "../MushroomCloud.Common/MushroomCloud.Common.csproj",
@@ -12092,6 +12112,7 @@
     ".NETCoreApp,Version=v2.1": [
       "Microsoft.AspNetCore.App >= 2.1.1",
       "Microsoft.NETCore.App >= 2.1.0",
+      "MushroomCloud.Api >= 1.0.0",
       "MushroomCloud.Common >= 1.0.0"
     ]
   },
@@ -12125,6 +12146,9 @@
       "frameworks": {
         "netcoreapp2.1": {
           "projectReferences": {
+            "D:\\PROJECTS\\IValchev\\MushroomCloudCity\\src\\MushroomCloud.Api\\MushroomCloud.Api.csproj": {
+              "projectPath": "D:\\PROJECTS\\IValchev\\MushroomCloudCity\\src\\MushroomCloud.Api\\MushroomCloud.Api.csproj"
+            },
             "D:\\PROJECTS\\IValchev\\MushroomCloudCity\\src\\MushroomCloud.Common\\MushroomCloud.Common.csproj": {
               "projectPath": "D:\\PROJECTS\\IValchev\\MushroomCloudCity\\src\\MushroomCloud.Common\\MushroomCloud.Common.csproj"
             }

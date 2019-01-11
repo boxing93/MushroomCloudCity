@@ -21,14 +21,17 @@ namespace MushroomCloud.Api.Controllers
         [HttpPost("")]
         public async Task<IActionResult> Post([FromBody] CreateActivity command)
         {
+            command.Id = Guid.NewGuid();
+            command.UserId = Guid.NewGuid();
+            command.CreatedAt = DateTime.UtcNow;
             await _busClient.PublishAsync(command);
             return Accepted($"activities/{command.Id}");
         }
 
         [HttpGet("get")]
-        public IActionResult Get()
+        public ActionResult<IEnumerable<string>> Get()
         {
-            return Accepted("test");
+            return new string[] { "value1", "value2" };
         }
     }
 
