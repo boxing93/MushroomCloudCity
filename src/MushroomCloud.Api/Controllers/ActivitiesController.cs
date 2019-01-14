@@ -13,10 +13,7 @@ namespace MushroomCloud.Api.Controllers
     public class ActivitiesController : ControllerBase
     {
         private readonly IBusClient _busClient;
-        public ActivitiesController(IBusClient busClient)
-        {
-            _busClient = busClient;
-        }
+        public ActivitiesController(IBusClient busClient) => _busClient = busClient;
 
         [HttpPost("")]
         public async Task<IActionResult> Post([FromBody] CreateActivity command)

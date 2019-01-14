@@ -16,3 +16,4 @@ D:\PROJECTS\IValchev\MushroomCloudCity\src\MushroomCloud.Common\obj\Debug\netcor
 D:\PROJECTS\IValchev\MushroomCloudCity\src\MushroomCloud.Common\obj\Debug\netcoreapp2.1\MushroomCloud.Common.AssemblyInfo.cs
 D:\PROJECTS\IValchev\MushroomCloudCity\src\MushroomCloud.Common\obj\Debug\netcoreapp2.1\MushroomCloud.Common.dll
 D:\PROJECTS\IValchev\MushroomCloudCity\src\MushroomCloud.Common\obj\Debug\netcoreapp2.1\MushroomCloud.Common.pdb
+D:\PROJECTS\IValchev\MushroomCloudCity\src\MushroomCloud.Common\obj\Debug\netcoreapp2.1\MushroomCloud.Common.csprojAssemblyReference.cache

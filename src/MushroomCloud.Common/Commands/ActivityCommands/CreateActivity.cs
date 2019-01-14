@@ -14,10 +14,5 @@ namespace MushroomCloud.Common.Commands.ActivitiesCommand
         public string Description { get; set; }
         public DateTime CreatedAt { get; set; }
 
-        public CreateActivity()
-        {
-
-        }
-
     }
 }

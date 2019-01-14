@@ -13,8 +13,6 @@ using Microsoft.Extensions.Options;
 using MushroomCloud.Api.Handlers;
 using MushroomCloud.Common.Commands;
 using MushroomCloud.Common.Commands.ActivitiesCommand;
-using MushroomCloud.Common.Events;
-using MushroomCloud.Common.Events.ActivityEvents;
 using MushroomCloud.Common.RabbitMq;
 using MushroomCloud.Services.Activities.Handlers;
 
@@ -32,7 +30,7 @@ namespace MushroomCloud.Services.Activities
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-            services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
+            services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
             services.AddRabbitMq(Configuration);
             services.AddScoped<ICommandHandler<CreateActivity>, CreateActivityHandler>();
         }

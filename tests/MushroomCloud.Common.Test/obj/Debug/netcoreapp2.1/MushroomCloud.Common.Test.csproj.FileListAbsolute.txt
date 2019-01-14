@@ -26,3 +26,17 @@ D:\Projects\MushroomCloud\tests\MushroomCloud.Common.Test\obj\Debug\netcoreapp2.
 D:\Projects\MushroomCloud\tests\MushroomCloud.Common.Test\obj\Debug\netcoreapp2.1\MushroomCloud.Common.Test.AssemblyInfo.cs
 D:\Projects\MushroomCloud\tests\MushroomCloud.Common.Test\obj\Debug\netcoreapp2.1\MushroomCloud.Common.Test.dll
 D:\Projects\MushroomCloud\tests\MushroomCloud.Common.Test\obj\Debug\netcoreapp2.1\MushroomCloud.Common.Test.pdb
+D:\PROJECTS\IValchev\MushroomCloudCity\tests\MushroomCloud.Common.Test\bin\Debug\netcoreapp2.1\xunit.runner.visualstudio.dotnetcore.testadapter.dll
+D:\PROJECTS\IValchev\MushroomCloudCity\tests\MushroomCloud.Common.Test\bin\Debug\netcoreapp2.1\xunit.runner.reporters.netcoreapp10.dll
+D:\PROJECTS\IValchev\MushroomCloudCity\tests\MushroomCloud.Common.Test\bin\Debug\netcoreapp2.1\xunit.runner.utility.netcoreapp10.dll
+D:\PROJECTS\IValchev\MushroomCloudCity\tests\MushroomCloud.Common.Test\bin\Debug\netcoreapp2.1\MushroomCloud.Common.Test.deps.json
+D:\PROJECTS\IValchev\MushroomCloudCity\tests\MushroomCloud.Common.Test\bin\Debug\netcoreapp2.1\MushroomCloud.Common.Test.runtimeconfig.json
+D:\PROJECTS\IValchev\MushroomCloudCity\tests\MushroomCloud.Common.Test\bin\Debug\netcoreapp2.1\MushroomCloud.Common.Test.runtimeconfig.dev.json
+D:\PROJECTS\IValchev\MushroomCloudCity\tests\MushroomCloud.Common.Test\bin\Debug\netcoreapp2.1\MushroomCloud.Common.Test.dll
+D:\PROJECTS\IValchev\MushroomCloudCity\tests\MushroomCloud.Common.Test\bin\Debug\netcoreapp2.1\MushroomCloud.Common.Test.pdb
+D:\PROJECTS\IValchev\MushroomCloudCity\tests\MushroomCloud.Common.Test\obj\Debug\netcoreapp2.1\MushroomCloud.Common.Test.csprojAssemblyReference.cache
+D:\PROJECTS\IValchev\MushroomCloudCity\tests\MushroomCloud.Common.Test\obj\Debug\netcoreapp2.1\MushroomCloud.Common.Test.csproj.CoreCompileInputs.cache
+D:\PROJECTS\IValchev\MushroomCloudCity\tests\MushroomCloud.Common.Test\obj\Debug\netcoreapp2.1\MushroomCloud.Common.Test.AssemblyInfoInputs.cache
+D:\PROJECTS\IValchev\MushroomCloudCity\tests\MushroomCloud.Common.Test\obj\Debug\netcoreapp2.1\MushroomCloud.Common.Test.AssemblyInfo.cs
+D:\PROJECTS\IValchev\MushroomCloudCity\tests\MushroomCloud.Common.Test\obj\Debug\netcoreapp2.1\MushroomCloud.Common.Test.dll
+D:\PROJECTS\IValchev\MushroomCloudCity\tests\MushroomCloud.Common.Test\obj\Debug\netcoreapp2.1\MushroomCloud.Common.Test.pdb

@@ -7,6 +7,7 @@ using Microsoft.AspNetCore;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.Logging;
+using MushroomCloud.Common.Commands.ActivitiesCommand;
 using MushroomCloud.Common.Events.ActivityEvents;
 using MushroomCloud.Common.Services;
 
@@ -18,7 +19,7 @@ namespace MushroomCloud.Services.Activities
         {
             HostedService.Create<Startup>(args)
                     .UseRabbitMq()
-                    .SubscribeToEvent<ActivityCreated>()
+                    .SubscribeToCommand<CreateActivity>()
                     .Build()
                     .Run();
         }

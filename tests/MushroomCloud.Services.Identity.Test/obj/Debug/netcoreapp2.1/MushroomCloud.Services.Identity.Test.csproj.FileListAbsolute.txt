@@ -26,3 +26,17 @@ D:\Projects\MushroomCloud\tests\MushroomCloud.Services.Identity.Test\obj\Debug\n
 D:\Projects\MushroomCloud\tests\MushroomCloud.Services.Identity.Test\obj\Debug\netcoreapp2.1\MushroomCloud.Services.Identity.Test.dll
 D:\Projects\MushroomCloud\tests\MushroomCloud.Services.Identity.Test\obj\Debug\netcoreapp2.1\MushroomCloud.Services.Identity.Test.pdb
 D:\Projects\MushroomCloud\tests\MushroomCloud.Services.Identity.Test\obj\Debug\netcoreapp2.1\MushroomCloud.Services.Identity.Test.csprojAssemblyReference.cache
+D:\PROJECTS\IValchev\MushroomCloudCity\tests\MushroomCloud.Services.Identity.Test\bin\Debug\netcoreapp2.1\xunit.runner.visualstudio.dotnetcore.testadapter.dll
+D:\PROJECTS\IValchev\MushroomCloudCity\tests\MushroomCloud.Services.Identity.Test\bin\Debug\netcoreapp2.1\xunit.runner.reporters.netcoreapp10.dll
+D:\PROJECTS\IValchev\MushroomCloudCity\tests\MushroomCloud.Services.Identity.Test\bin\Debug\netcoreapp2.1\xunit.runner.utility.netcoreapp10.dll
+D:\PROJECTS\IValchev\MushroomCloudCity\tests\MushroomCloud.Services.Identity.Test\bin\Debug\netcoreapp2.1\MushroomCloud.Services.Identity.Test.deps.json
+D:\PROJECTS\IValchev\MushroomCloudCity\tests\MushroomCloud.Services.Identity.Test\bin\Debug\netcoreapp2.1\MushroomCloud.Services.Identity.Test.runtimeconfig.json
+D:\PROJECTS\IValchev\MushroomCloudCity\tests\MushroomCloud.Services.Identity.Test\bin\Debug\netcoreapp2.1\MushroomCloud.Services.Identity.Test.runtimeconfig.dev.json
+D:\PROJECTS\IValchev\MushroomCloudCity\tests\MushroomCloud.Services.Identity.Test\bin\Debug\netcoreapp2.1\MushroomCloud.Services.Identity.Test.dll
+D:\PROJECTS\IValchev\MushroomCloudCity\tests\MushroomCloud.Services.Identity.Test\bin\Debug\netcoreapp2.1\MushroomCloud.Services.Identity.Test.pdb
+D:\PROJECTS\IValchev\MushroomCloudCity\tests\MushroomCloud.Services.Identity.Test\obj\Debug\netcoreapp2.1\MushroomCloud.Services.Identity.Test.csprojAssemblyReference.cache
+D:\PROJECTS\IValchev\MushroomCloudCity\tests\MushroomCloud.Services.Identity.Test\obj\Debug\netcoreapp2.1\MushroomCloud.Services.Identity.Test.csproj.CoreCompileInputs.cache
+D:\PROJECTS\IValchev\MushroomCloudCity\tests\MushroomCloud.Services.Identity.Test\obj\Debug\netcoreapp2.1\MushroomCloud.Services.Identity.Test.AssemblyInfoInputs.cache
+D:\PROJECTS\IValchev\MushroomCloudCity\tests\MushroomCloud.Services.Identity.Test\obj\Debug\netcoreapp2.1\MushroomCloud.Services.Identity.Test.AssemblyInfo.cs
+D:\PROJECTS\IValchev\MushroomCloudCity\tests\MushroomCloud.Services.Identity.Test\obj\Debug\netcoreapp2.1\MushroomCloud.Services.Identity.Test.dll
+D:\PROJECTS\IValchev\MushroomCloudCity\tests\MushroomCloud.Services.Identity.Test\obj\Debug\netcoreapp2.1\MushroomCloud.Services.Identity.Test.pdb

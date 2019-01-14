@@ -1,7 +1,7 @@
 {
   "runtimeTarget": {
     "name": ".NETCoreApp,Version=v2.1",
-    "signature": "352baa2b60d3e7c81203316d5fbd64f47f0c4488"
+    "signature": "3f80bddfb8ba71d12fcf1679fc8ef40d9ddf5eca"
   },
   "compilationOptions": {
     "defines": [
@@ -244,7 +244,7 @@
           "lib/netstandard1.5/RabbitMQ.Client.dll": {}
         }
       },
-      "RawRabbit/2.0.0-beta8": {
+      "RawRabbit/2.0.0-rc5": {
         "dependencies": {
           "NETStandard.Library": "2.0.3",
           "Newtonsoft.Json": "11.0.2",
@@ -260,11 +260,11 @@
           "lib/netstandard1.5/RawRabbit.dll": {}
         }
       },
-      "RawRabbit.DependencyInjection.ServiceCollection/2.0.0-beta8": {
+      "RawRabbit.DependencyInjection.ServiceCollection/2.0.0-rc5": {
         "dependencies": {
           "Microsoft.Extensions.DependencyInjection": "2.1.1",
           "NETStandard.Library": "2.0.3",
-          "RawRabbit": "2.0.0-beta8"
+          "RawRabbit": "2.0.0-rc5"
         },
         "runtime": {
           "lib/netstandard1.5/RawRabbit.DependencyInjection.ServiceCollection.dll": {
@@ -276,10 +276,10 @@
           "lib/netstandard1.5/RawRabbit.DependencyInjection.ServiceCollection.dll": {}
         }
       },
-      "RawRabbit.Operations.Publish/2.0.0-beta8": {
+      "RawRabbit.Operations.Publish/2.0.0-rc5": {
         "dependencies": {
           "NETStandard.Library": "2.0.3",
-          "RawRabbit": "2.0.0-beta8"
+          "RawRabbit": "2.0.0-rc5"
         },
         "runtime": {
           "lib/netstandard1.5/RawRabbit.Operations.Publish.dll": {
@@ -291,10 +291,10 @@
           "lib/netstandard1.5/RawRabbit.Operations.Publish.dll": {}
         }
       },
-      "RawRabbit.Operations.Subscribe/2.0.0-beta8": {
+      "RawRabbit.Operations.Subscribe/2.0.0-rc5": {
         "dependencies": {
           "NETStandard.Library": "2.0.3",
-          "RawRabbit": "2.0.0-beta8"
+          "RawRabbit": "2.0.0-rc5"
         },
         "runtime": {
           "lib/netstandard1.5/RawRabbit.Operations.Subscribe.dll": {
@@ -313,7 +313,7 @@
           "Microsoft.Extensions.DependencyInjection": "2.1.1",
           "Microsoft.Extensions.Logging": "2.1.1",
           "NETStandard.Library": "2.0.3",
-          "RawRabbit": "2.0.0-beta8"
+          "RawRabbit": "2.0.0-rc5"
         },
         "runtime": {
           "lib/netstandard1.5/RawRabbit.vNext.dll": {
@@ -428,10 +428,10 @@
         "dependencies": {
           "Microsoft.AspNetCore.App": "2.1.1",
           "Microsoft.AspNetCore.Hosting": "2.1.1",
-          "RawRabbit": "2.0.0-beta8",
-          "RawRabbit.DependencyInjection.ServiceCollection": "2.0.0-beta8",
-          "RawRabbit.Operations.Publish": "2.0.0-beta8",
-          "RawRabbit.Operations.Subscribe": "2.0.0-beta8",
+          "RawRabbit": "2.0.0-rc5",
+          "RawRabbit.DependencyInjection.ServiceCollection": "2.0.0-rc5",
+          "RawRabbit.Operations.Publish": "2.0.0-rc5",
+          "RawRabbit.Operations.Subscribe": "2.0.0-rc5",
           "RawRabbit.vNext": "2.0.0-beta8"
         },
         "runtime": {
@@ -3455,33 +3455,33 @@
       "path": "rabbitmq.client/5.0.1",
       "hashPath": "rabbitmq.client.5.0.1.nupkg.sha512"
     },
-    "RawRabbit/2.0.0-beta8": {
+    "RawRabbit/2.0.0-rc5": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-gAXa06ZSBbNW4ykL4reUgNWIVoWoOeRW233smeluY0t/mtuBTbN6/Hh7YyvxdrNvNADhn+QvM2/GvY994tor5A==",
-      "path": "rawrabbit/2.0.0-beta8",
-      "hashPath": "rawrabbit.2.0.0-beta8.nupkg.sha512"
+      "sha512": "sha512-aLepB2/IZ7S/NLryFEQfVUHbu4WuSlag2iFwWwt6ftmpVusZoUOHeQgFlXwljz9YgwNffegJ69jBUpz9AkvF4Q==",
+      "path": "rawrabbit/2.0.0-rc5",
+      "hashPath": "rawrabbit.2.0.0-rc5.nupkg.sha512"
     },
-    "RawRabbit.DependencyInjection.ServiceCollection/2.0.0-beta8": {
+    "RawRabbit.DependencyInjection.ServiceCollection/2.0.0-rc5": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-1Ol7ThyJjqIUDTGuPXPTgNype6lCiy8IGp8Hqh/PUWZPYpYEnNip92BFAGsey9QoCfqw8nzPdW1/jk+Ic01BAg==",
-      "path": "rawrabbit.dependencyinjection.servicecollection/2.0.0-beta8",
-      "hashPath": "rawrabbit.dependencyinjection.servicecollection.2.0.0-beta8.nupkg.sha512"
+      "sha512": "sha512-UlLYQ7m4aAmDc3djuRFKHirkJBhF+PeP3k2JfaQLIi/yi6mSrSs4uqGuWWVjRXqMP5RxKPwzx4A2je2Ta9cg4Q==",
+      "path": "rawrabbit.dependencyinjection.servicecollection/2.0.0-rc5",
+      "hashPath": "rawrabbit.dependencyinjection.servicecollection.2.0.0-rc5.nupkg.sha512"
     },
-    "RawRabbit.Operations.Publish/2.0.0-beta8": {
+    "RawRabbit.Operations.Publish/2.0.0-rc5": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-AE4amKO8dI276sFiWJb5nu8Y2raACZW40qZtub9bOZe34Noe32KL3AI6hs4pTkbEVwh/Bjo/f9uhHj7gjiOzig==",
-      "path": "rawrabbit.operations.publish/2.0.0-beta8",
-      "hashPath": "rawrabbit.operations.publish.2.0.0-beta8.nupkg.sha512"
+      "sha512": "sha512-Oxc/k/ZlosIAkZx0vF9fhQyNsl08WkxO8czZYyYNcYiA2qNyL5TJ22M3muQ/V1DxQdsP7BpsCGKJOz0xAcg9Ow==",
+      "path": "rawrabbit.operations.publish/2.0.0-rc5",
+      "hashPath": "rawrabbit.operations.publish.2.0.0-rc5.nupkg.sha512"
     },
-    "RawRabbit.Operations.Subscribe/2.0.0-beta8": {
+    "RawRabbit.Operations.Subscribe/2.0.0-rc5": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-S7LJAH1fOOupMUwVH1n7jDHbpbbw3obLaRU6wFDzBtLuQ6CZOP/VcECDjnQmOlMYY4CY1WkNOF1+5OJBt+3UDA==",
-      "path": "rawrabbit.operations.subscribe/2.0.0-beta8",
-      "hashPath": "rawrabbit.operations.subscribe.2.0.0-beta8.nupkg.sha512"
+      "sha512": "sha512-D9vYNhmwu87wNPDuOQ6HlZ17pHnWSlz/wjuIPKs78wWpkZ2pholcUYClmmnyz9xwck6kToxkQJvLHPVhZQhyNw==",
+      "path": "rawrabbit.operations.subscribe/2.0.0-rc5",
+      "hashPath": "rawrabbit.operations.subscribe.2.0.0-rc5.nupkg.sha512"
     },
     "RawRabbit.vNext/2.0.0-beta8": {
       "type": "package",
