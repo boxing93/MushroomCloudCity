@@ -427,7 +427,13 @@
       },
       "MushroomCloud.Api/1.0.0": {
         "dependencies": {
-          "MushroomCloud.Common": "1.0.0"
+          "Microsoft.AspNetCore.Hosting": "2.2.0",
+          "MushroomCloud.Common": "1.0.0",
+          "RawRabbit": "2.0.0-rc5",
+          "RawRabbit.DependencyInjection.ServiceCollection": "2.0.0-rc5",
+          "RawRabbit.Operations.Publish": "2.0.0-rc5",
+          "RawRabbit.Operations.Subscribe": "2.0.0-rc5",
+          "RawRabbit.vNext": "2.0.0-beta8"
         },
         "runtime": {
           "MushroomCloud.Api.dll": {}

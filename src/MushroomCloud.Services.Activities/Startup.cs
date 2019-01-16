@@ -32,7 +32,7 @@ namespace MushroomCloud.Services.Activities
         {
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
             services.AddRabbitMq(Configuration);
-            services.AddScoped<ICommandHandler<CreateActivity>, CreateActivityHandler>();
+            services.AddSingleton<ICommandHandler<CreateActivity>, CreateActivityHandler>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -42,12 +42,12 @@ namespace MushroomCloud.Services.Activities
             {
                 app.UseDeveloperExceptionPage();
             }
-            else
-            {
-                app.UseHsts();
-            }
+            //else
+            //{
+            //    app.UseHsts();
+            //}
 
-            app.UseHttpsRedirection();
+            //app.UseHttpsRedirection();
             app.UseMvc();
         }
     }

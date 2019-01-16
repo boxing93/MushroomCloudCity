@@ -1,7 +1,7 @@
 {
   "runtimeTarget": {
     "name": ".NETCoreApp,Version=v2.2",
-    "signature": "2e1c98acba7f6b83c69b0fc12d093d548a734952"
+    "signature": "89dda4ed4159f7bdb1c212c7d176396c8e9cfd83"
   },
   "compilationOptions": {},
   "targets": {
@@ -12,8 +12,7 @@
           "RawRabbit": "2.0.0-rc5",
           "RawRabbit.DependencyInjection.ServiceCollection": "2.0.0-rc5",
           "RawRabbit.Operations.Publish": "2.0.0-rc5",
-          "RawRabbit.Operations.Subscribe": "2.0.0-rc5",
-          "RawRabbit.vNext": "2.0.0-beta8"
+          "RawRabbit.Operations.Subscribe": "2.0.0-rc5"
         },
         "runtime": {
           "MushroomCloud.Common.dll": {}
@@ -109,18 +108,6 @@
         },
         "runtime": {
           "lib/netstandard1.5/RawRabbit.Operations.Subscribe.dll": {
-            "assemblyVersion": "2.0.0.0",
-            "fileVersion": "2.0.0.0"
-          }
-        }
-      },
-      "RawRabbit.vNext/2.0.0-beta8": {
-        "dependencies": {
-          "NETStandard.Library": "2.0.3",
-          "RawRabbit": "2.0.0-rc5"
-        },
-        "runtime": {
-          "lib/netstandard1.5/RawRabbit.vNext.dll": {
             "assemblyVersion": "2.0.0.0",
             "fileVersion": "2.0.0.0"
           }
@@ -276,13 +263,6 @@
       "sha512": "sha512-naD0qHa1w8MZj7/A670APTNG/mON9Q5UxdUHGU4j5GuIahk6muou0oUqUb1bRhInmKuP3H62uhnvLBb8fD7feg==",
       "path": "rawrabbit.operations.subscribe/2.0.0-rc5",
       "hashPath": "rawrabbit.operations.subscribe.2.0.0-rc5.nupkg.sha512"
-    },
-    "RawRabbit.vNext/2.0.0-beta8": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-0gQKOCmhP9WK/i37bMK9f5G0aNZi8DDaFGiZb7D+UbZiI/sYq7c6vpGEAIrboZOd7GMCW1XQLChA8pL+PYkGgA==",
-      "path": "rawrabbit.vnext/2.0.0-beta8",
-      "hashPath": "rawrabbit.vnext.2.0.0-beta8.nupkg.sha512"
     },
     "runtime.native.System.Net.Security/4.3.0": {
       "type": "package",
