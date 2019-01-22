@@ -1,0 +1,11 @@
+D:\PROJECTS\IValchev\MushroomCloudCity\src\MushroomCloud.Common\bin\Release\netcoreapp2.2\MushroomCloud.Common.deps.json
+D:\PROJECTS\IValchev\MushroomCloudCity\src\MushroomCloud.Common\bin\Release\netcoreapp2.2\MushroomCloud.Common.runtimeconfig.json
+D:\PROJECTS\IValchev\MushroomCloudCity\src\MushroomCloud.Common\bin\Release\netcoreapp2.2\MushroomCloud.Common.runtimeconfig.dev.json
+D:\PROJECTS\IValchev\MushroomCloudCity\src\MushroomCloud.Common\bin\Release\netcoreapp2.2\MushroomCloud.Common.dll
+D:\PROJECTS\IValchev\MushroomCloudCity\src\MushroomCloud.Common\bin\Release\netcoreapp2.2\MushroomCloud.Common.pdb
+D:\PROJECTS\IValchev\MushroomCloudCity\src\MushroomCloud.Common\obj\Release\netcoreapp2.2\MushroomCloud.Common.csprojAssemblyReference.cache
+D:\PROJECTS\IValchev\MushroomCloudCity\src\MushroomCloud.Common\obj\Release\netcoreapp2.2\MushroomCloud.Common.csproj.CoreCompileInputs.cache
+D:\PROJECTS\IValchev\MushroomCloudCity\src\MushroomCloud.Common\obj\Release\netcoreapp2.2\MushroomCloud.Common.AssemblyInfoInputs.cache
+D:\PROJECTS\IValchev\MushroomCloudCity\src\MushroomCloud.Common\obj\Release\netcoreapp2.2\MushroomCloud.Common.AssemblyInfo.cs
+D:\PROJECTS\IValchev\MushroomCloudCity\src\MushroomCloud.Common\obj\Release\netcoreapp2.2\MushroomCloud.Common.dll
+D:\PROJECTS\IValchev\MushroomCloudCity\src\MushroomCloud.Common\obj\Release\netcoreapp2.2\MushroomCloud.Common.pdb

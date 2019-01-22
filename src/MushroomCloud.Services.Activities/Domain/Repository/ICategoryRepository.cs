@@ -1,4 +1,4 @@
-﻿]using MushroomCloud.Services.Activities.Domain.Models;
+﻿using MushroomCloud.Services.Activities.Domain.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
