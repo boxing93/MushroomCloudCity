@@ -18,6 +18,7 @@ using MushroomCloud.Common.RabbitMq;
 using MushroomCloud.Services.Activities.Domain.Repository;
 using MushroomCloud.Services.Activities.Handlers;
 using MushroomCloud.Services.Activities.Repositories;
+using MushroomCloud.Services.Activities.Services;
 
 namespace MushroomCloud.Services.Activities
 {
@@ -39,8 +40,9 @@ namespace MushroomCloud.Services.Activities
             services.AddScoped<ICategoryRepository, CategoryRepository>();
             services.AddScoped<IActivityRepository, ActivityRepository>();
             //services.AddScoped<IDatabaseSeeder, MongoSeeder>();
-             services.AddRabbitMq(Configuration);
+            services.AddRabbitMq(Configuration);
             services.AddSingleton<ICommandHandler<CreateActivity>, CreateActivityHandler>();
+            services.AddScoped<IActivityService, ActivityService>();
 
         }
 

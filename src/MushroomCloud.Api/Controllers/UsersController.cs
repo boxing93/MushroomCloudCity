@@ -3,6 +3,8 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using MushroomCloud.Common.Commands.ActivitiesCommand;
 using MushroomCloud.Common.Commands.IdentityCommands;
+using MushroomCloud.Common.Events;
+using MushroomCloud.Common.Events.ActivityEvents;
 using RawRabbit;
 
 namespace MushroomCloud.Api.Controllers
@@ -20,6 +22,7 @@ namespace MushroomCloud.Api.Controllers
         public async Task<IActionResult> Post([FromBody] CreateUser command)
         {
             await _busClient.PublishAsync(command);
+            
             return Accepted();
         }
     }
