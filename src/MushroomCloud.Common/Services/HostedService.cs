@@ -70,7 +70,6 @@ namespace MushroomCloud.Common.Services
         public abstract class BuilderBase
         {
             public abstract HostedService Build();
-
         }
 
         public class HostBuilder : BuilderBase

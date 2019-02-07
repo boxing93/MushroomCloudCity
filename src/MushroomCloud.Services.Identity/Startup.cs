@@ -10,6 +10,11 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Options;
+using MushroomCloud.Common.Mongo;
+using MushroomCloud.Common.RabbitMq;
+using MushroomCloud.Services.Activities.Domain.Services;
+using MushroomCloud.Services.Identity.Domain.Repositories;
+using MushroomCloud.Services.Identity.Services;
 
 namespace MushroomCloud.Services.Identity
 {
@@ -26,6 +31,12 @@ namespace MushroomCloud.Services.Identity
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
+            services.AddLogging();
+            services.AddMongoDb(Configuration);
+            services.AddRabbitMq(Configuration);
+            services.AddScoped<IUserService, UserService>();
+            services.AddScoped<IEncrypter, Encrypter>();
+            services.AddScoped<IUserRepository, UserRepository>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -39,6 +50,7 @@ namespace MushroomCloud.Services.Identity
             {
                 app.UseHsts();
             }
+            app.ApplicationServices.GetService<IDatabaseInitializer>().InitializeAsync();
 
             app.UseHttpsRedirection();
             app.UseMvc();
