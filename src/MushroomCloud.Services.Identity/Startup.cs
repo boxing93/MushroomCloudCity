@@ -10,6 +10,8 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Options;
+using MushroomCloud.Common.Commands;
+using MushroomCloud.Common.Commands.IdentityCommands;
 using MushroomCloud.Common.Mongo;
 using MushroomCloud.Common.RabbitMq;
 using MushroomCloud.Services.Activities.Domain.Services;
@@ -34,6 +36,7 @@ namespace MushroomCloud.Services.Identity
             services.AddLogging();
             services.AddMongoDb(Configuration);
             services.AddRabbitMq(Configuration);
+            services.AddScoped<ICommandHandler<CreateUser>,CreateUserHandler>();
             services.AddScoped<IUserService, UserService>();
             services.AddScoped<IEncrypter, Encrypter>();
             services.AddScoped<IUserRepository, UserRepository>();

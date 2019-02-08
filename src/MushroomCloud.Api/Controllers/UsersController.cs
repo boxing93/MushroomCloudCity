@@ -22,7 +22,6 @@ namespace MushroomCloud.Api.Controllers
         public async Task<IActionResult> Post([FromBody] CreateUser command)
         {
             await _busClient.PublishAsync(command);
-            
             return Accepted();
         }
     }

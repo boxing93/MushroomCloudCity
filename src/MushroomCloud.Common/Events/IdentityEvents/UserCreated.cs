@@ -4,7 +4,7 @@ using System.Text;
 
 namespace MushroomCloud.Common.Events.IdentityEvents
 {
-    class UserCreated : IEvent
+   public class UserCreated : IEvent
     {
         public string Email { get; }
 
