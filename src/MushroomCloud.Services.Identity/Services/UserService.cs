@@ -1,4 +1,5 @@
-﻿using MushroomCloud.Common.Exceptions;
+﻿using MushroomCloud.Common.Auth;
+using MushroomCloud.Common.Exceptions;
 using MushroomCloud.Services.Activities.Domain.Services;
 using MushroomCloud.Services.Identity.Domain.Models;
 using MushroomCloud.Services.Identity.Domain.Repositories;
@@ -12,6 +13,7 @@ namespace MushroomCloud.Services.Identity.Services
     public class UserService : IUserService
     {
         private readonly IUserRepository _userRepository;
+        private readonly IJwtHandler _jwtHandler;
         private readonly IEncrypter _encrypter;
 
         public UserService(IUserRepository repository, IEncrypter encrypter)
@@ -20,7 +22,7 @@ namespace MushroomCloud.Services.Identity.Services
             _encrypter = encrypter;
         }
 
-        public async Task LoginAsync(string email, string password)
+        public async Task<JsonWebToken> LoginAsync(string email, string password)
         {
             var user = await _userRepository.GetAsync(email);
             if (user == null)
@@ -33,8 +35,7 @@ namespace MushroomCloud.Services.Identity.Services
                 throw new MushroomCloudException("invalid_credentials",
                     $"Invalid credentials.");
             }
-            //TO DO: 
-            //Json web token handler who create token by user id. 
+            return _jwtHandler.Create(user.Id);
         }
 
         public async Task RegisterAsync(string email, string password, string name)
