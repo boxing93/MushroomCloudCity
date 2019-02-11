@@ -3,9 +3,7 @@ D:\PROJECTS\IValchev\MushroomCloudCity\src\MushroomCloud.Services.Activities\bin
 D:\PROJECTS\IValchev\MushroomCloudCity\src\MushroomCloud.Services.Activities\bin\Debug\netcoreapp2.2\MushroomCloud.Services.Activities.runtimeconfig.dev.json
 D:\PROJECTS\IValchev\MushroomCloudCity\src\MushroomCloud.Services.Activities\bin\Debug\netcoreapp2.2\MushroomCloud.Services.Activities.dll
 D:\PROJECTS\IValchev\MushroomCloudCity\src\MushroomCloud.Services.Activities\bin\Debug\netcoreapp2.2\MushroomCloud.Services.Activities.pdb
-D:\PROJECTS\IValchev\MushroomCloudCity\src\MushroomCloud.Services.Activities\bin\Debug\netcoreapp2.2\MushroomCloud.Api.dll
 D:\PROJECTS\IValchev\MushroomCloudCity\src\MushroomCloud.Services.Activities\bin\Debug\netcoreapp2.2\MushroomCloud.Common.dll
-D:\PROJECTS\IValchev\MushroomCloudCity\src\MushroomCloud.Services.Activities\bin\Debug\netcoreapp2.2\MushroomCloud.Api.pdb
 D:\PROJECTS\IValchev\MushroomCloudCity\src\MushroomCloud.Services.Activities\bin\Debug\netcoreapp2.2\MushroomCloud.Common.pdb
 D:\PROJECTS\IValchev\MushroomCloudCity\src\MushroomCloud.Services.Activities\obj\Debug\netcoreapp2.2\MushroomCloud.Services.Activities.csprojAssemblyReference.cache
 D:\PROJECTS\IValchev\MushroomCloudCity\src\MushroomCloud.Services.Activities\obj\Debug\netcoreapp2.2\MushroomCloud.Services.Activities.csproj.CoreCompileInputs.cache

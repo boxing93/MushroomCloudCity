@@ -1,13 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using System.IO;
-using System.Linq;
-using System.Threading.Tasks;
-using Microsoft.AspNetCore;
-using Microsoft.AspNetCore.Hosting;
-using Microsoft.Extensions.Configuration;
-using Microsoft.Extensions.Logging;
-using MushroomCloud.Common.Commands.ActivitiesCommand;
+﻿using MushroomCloud.Common.Commands.ActivitiesCommand;
+using MushroomCloud.Common.Commands.IdentityCommands;
 using MushroomCloud.Common.Services;
 
 namespace MushroomCloud.Services.Identity
@@ -18,7 +10,7 @@ namespace MushroomCloud.Services.Identity
         {
             HostedService.Create<Startup>(args)
             .UseRabbitMq()
-            .SubscribeToCommand<CreateActivity>()
+            .SubscribeToCommand<CreateUser>()
             .Build()
             .Run();        
         }

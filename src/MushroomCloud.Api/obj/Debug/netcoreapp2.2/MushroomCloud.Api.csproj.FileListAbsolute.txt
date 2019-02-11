@@ -15,3 +15,5 @@ D:\PROJECTS\IValchev\MushroomCloudCity\src\MushroomCloud.Api\obj\Debug\netcoreap
 D:\PROJECTS\IValchev\MushroomCloudCity\src\MushroomCloud.Api\obj\Debug\netcoreapp2.2\MushroomCloud.Api.csproj.CopyComplete
 D:\PROJECTS\IValchev\MushroomCloudCity\src\MushroomCloud.Api\obj\Debug\netcoreapp2.2\MushroomCloud.Api.dll
 D:\PROJECTS\IValchev\MushroomCloudCity\src\MushroomCloud.Api\obj\Debug\netcoreapp2.2\MushroomCloud.Api.pdb
+D:\PROJECTS\IValchev\MushroomCloudCity\src\MushroomCloud.Api\bin\Debug\netcoreapp2.2\MushroomCloud.Services.Activities.dll
+D:\PROJECTS\IValchev\MushroomCloudCity\src\MushroomCloud.Api\bin\Debug\netcoreapp2.2\MushroomCloud.Services.Activities.pdb

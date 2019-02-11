@@ -4,7 +4,7 @@ using System.Text;
 
 namespace MushroomCloud.Common.Commands.IdentityCommands
 {
-    interface IAuthenticatedCommand : ICommand
+    public interface IAuthenticatedCommand : ICommand
     {
         Guid UserId { get; set; }
     }

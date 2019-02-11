@@ -10,16 +10,17 @@
 
   <ItemGroup>
     <PackageReference Include="Microsoft.AspNetCore.App" />
-    <PackageReference Include="Microsoft.AspNetCore.Hosting" Version="2.2.0"/>
-    <PackageReference Include="RawRabbit.DependencyInjection.ServiceCollection" Version="2.0.0-rc5"/>
+    <PackageReference Include="Microsoft.AspNetCore.Hosting" Version="2.2.0" />
+    <PackageReference Include="RawRabbit.DependencyInjection.ServiceCollection" Version="2.0.0-rc5" />
     <!-- <PackageReference Include="RawRabbit.vNext" Version="2.0.0-beta8"/> -->
-    <PackageReference Include="RawRabbit" Version="2.0.0-rc5"/>
-    <PackageReference Include="RawRabbit.Operations.Publish" Version="2.0.0-rc5"/>
-    <PackageReference Include="RawRabbit.Operations.Subscribe" Version="2.0.0-rc5"/>
+    <PackageReference Include="RawRabbit" Version="2.0.0-rc5" />
+    <PackageReference Include="RawRabbit.Operations.Publish" Version="2.0.0-rc5" />
+    <PackageReference Include="RawRabbit.Operations.Subscribe" Version="2.0.0-rc5" />
   </ItemGroup>
 
   <ItemGroup>
     <ProjectReference Include="..\MushroomCloud.Common\MushroomCloud.Common.csproj" />
+    <ProjectReference Include="..\MushroomCloud.Services.Activities\MushroomCloud.Services.Activities.csproj" />
   </ItemGroup>
 
 </Project>

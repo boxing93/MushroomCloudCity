@@ -34,7 +34,6 @@ D:\PROJECTS\IValchev\MushroomCloudCity\tests\MushroomCloud.Services.Identity.Tes
 D:\PROJECTS\IValchev\MushroomCloudCity\tests\MushroomCloud.Services.Identity.Test\bin\Debug\netcoreapp2.1\MushroomCloud.Services.Identity.Test.runtimeconfig.dev.json
 D:\PROJECTS\IValchev\MushroomCloudCity\tests\MushroomCloud.Services.Identity.Test\bin\Debug\netcoreapp2.1\MushroomCloud.Services.Identity.Test.dll
 D:\PROJECTS\IValchev\MushroomCloudCity\tests\MushroomCloud.Services.Identity.Test\bin\Debug\netcoreapp2.1\MushroomCloud.Services.Identity.Test.pdb
-D:\PROJECTS\IValchev\MushroomCloudCity\tests\MushroomCloud.Services.Identity.Test\obj\Debug\netcoreapp2.1\MushroomCloud.Services.Identity.Test.csprojAssemblyReference.cache
 D:\PROJECTS\IValchev\MushroomCloudCity\tests\MushroomCloud.Services.Identity.Test\obj\Debug\netcoreapp2.1\MushroomCloud.Services.Identity.Test.csproj.CoreCompileInputs.cache
 D:\PROJECTS\IValchev\MushroomCloudCity\tests\MushroomCloud.Services.Identity.Test\obj\Debug\netcoreapp2.1\MushroomCloud.Services.Identity.Test.AssemblyInfoInputs.cache
 D:\PROJECTS\IValchev\MushroomCloudCity\tests\MushroomCloud.Services.Identity.Test\obj\Debug\netcoreapp2.1\MushroomCloud.Services.Identity.Test.AssemblyInfo.cs

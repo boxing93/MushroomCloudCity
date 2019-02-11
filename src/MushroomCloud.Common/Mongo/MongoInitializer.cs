@@ -22,10 +22,6 @@ namespace MushroomCloud.Common.Mongo
             _seed = options.Value.Seed;
         }
 
-        public MongoInitializer()
-        {
-        }
-
         public async Task InitializeAsync()
         {
             if (_initialized)

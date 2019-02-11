@@ -16,8 +16,9 @@ namespace MushroomCloud.Services.Identity.Services
         private readonly IJwtHandler _jwtHandler;
         private readonly IEncrypter _encrypter;
 
-        public UserService(IUserRepository repository, IEncrypter encrypter)
+        public UserService(IUserRepository repository, IEncrypter encrypter, IJwtHandler jwtHandler)
         {
+            _jwtHandler = jwtHandler;
             _userRepository = repository;
             _encrypter = encrypter;
         }

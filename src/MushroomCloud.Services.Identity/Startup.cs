@@ -10,12 +10,14 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Options;
+using MushroomCloud.Common.Auth;
 using MushroomCloud.Common.Commands;
 using MushroomCloud.Common.Commands.IdentityCommands;
 using MushroomCloud.Common.Mongo;
 using MushroomCloud.Common.RabbitMq;
 using MushroomCloud.Services.Activities.Domain.Services;
 using MushroomCloud.Services.Identity.Domain.Repositories;
+using MushroomCloud.Services.Identity.Handlers;
 using MushroomCloud.Services.Identity.Services;
 
 namespace MushroomCloud.Services.Identity
@@ -30,16 +32,19 @@ namespace MushroomCloud.Services.Identity
         public IConfiguration Configuration { get; }
 
         // This method gets called by the runtime. Use this method to add services to the container.
-        public void ConfigureServices(IServiceCollection services)
+        public IServiceProvider ConfigureServices(IServiceCollection services)
         {
-            services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
+            services.AddMvc();
             services.AddLogging();
             services.AddMongoDb(Configuration);
             services.AddRabbitMq(Configuration);
+            services.AddScoped<IJwtHandler, JwtHandler>();
             services.AddScoped<ICommandHandler<CreateUser>,CreateUserHandler>();
             services.AddScoped<IUserService, UserService>();
             services.AddScoped<IEncrypter, Encrypter>();
             services.AddScoped<IUserRepository, UserRepository>();
+            return services.BuildServiceProvider();
+
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

@@ -10,7 +10,7 @@ using RawRabbit;
 namespace MushroomCloud.Api.Controllers
 {
     [Route("[controller]")]
-    public class UsersController : ControllerBase
+    public class UsersController : Controller
     {
         private readonly IBusClient _busClient;
         public UsersController(IBusClient busClient)
@@ -22,7 +22,8 @@ namespace MushroomCloud.Api.Controllers
         public async Task<IActionResult> Post([FromBody] CreateUser command)
         {
             await _busClient.PublishAsync(command);
-            return Accepted();
+            Console.WriteLine(command.Email);
+            return Accepted($"Users/{command.Email}");
         }
     }
 }

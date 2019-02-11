@@ -13,8 +13,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\MushroomCloud.Api\MushroomCloud.Api.csproj" />
     <ProjectReference Include="..\MushroomCloud.Common\MushroomCloud.Common.csproj" />
   </ItemGroup>
-
 </Project>
