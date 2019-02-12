@@ -11,6 +11,7 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Options;
 using MushroomCloud.Api.Handlers;
+using MushroomCloud.Api.Repositories;
 using MushroomCloud.Common.Auth;
 using MushroomCloud.Common.Commands;
 using MushroomCloud.Common.Commands.ActivitiesCommand;
@@ -19,7 +20,7 @@ using MushroomCloud.Common.Events.ActivityEvents;
 using MushroomCloud.Common.Mongo;
 using MushroomCloud.Common.RabbitMq;
 using MushroomCloud.Services.Activities.Domain.Repository;
-using MushroomCloud.Services.Activities.Repositories;
+using IActivityRepository = MushroomCloud.Api.Repositories.IActivityRepository;
 
 namespace MushroomCloud.Api
 {
@@ -42,7 +43,7 @@ namespace MushroomCloud.Api
             //services.AddScoped<IDatabaseInitializer, MongoInitializer>();
             services.AddSingleton<IEventHandler<ActivityCreated>,ActivityCreatedHandler>();
             services.AddScoped<IActivityRepository,ActivityRepository>();
-            services.AddScoped<IActivityRepository, ActivityRepository>();
+            // services.AddScoped<IActivityRepository, Repositories.ActivityRepository>();
             return services.BuildServiceProvider();
 
         }

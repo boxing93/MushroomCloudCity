@@ -27,10 +27,10 @@ namespace MushroomCloud.Api.Repositories
         public async Task AddAsync(Models.Activity model) => await Collection.InsertOneAsync(model);
 
 
-        public async Task<Models.Activity> GetAsync(Models.Activity model)
-        => await Collection
-                    .AsQueryable()
-                    .FirstOrDefaultAsync(x => x.Id == model.Id);
+        public async Task<Models.Activity> GetAsync(Guid id)
+            => await Collection
+                .AsQueryable()
+                .FirstOrDefaultAsync(x => x.Id == id);
 
         private IMongoCollection<Models.Activity> Collection 
             => _database.GetCollection<Models.Activity>("Activities");

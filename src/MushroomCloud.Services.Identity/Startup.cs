@@ -38,6 +38,7 @@ namespace MushroomCloud.Services.Identity
             services.AddLogging();
             services.AddMongoDb(Configuration);
             services.AddRabbitMq(Configuration);
+            services.AddJwt(Configuration);
             services.AddScoped<IJwtHandler, JwtHandler>();
             services.AddScoped<ICommandHandler<CreateUser>,CreateUserHandler>();
             services.AddScoped<IUserService, UserService>();
