@@ -24,7 +24,6 @@ namespace MushroomCloud.Common.Services
 
         public void Run() => _webHost.Run();
 
-
         public static HostBuilder Create<TStartup>(string[] args) where TStartup : class
         {
             Console.Title = typeof(TStartup).Namespace;

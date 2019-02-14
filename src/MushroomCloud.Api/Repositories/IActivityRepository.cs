@@ -9,9 +9,9 @@ namespace MushroomCloud.Api.Repositories
     {
         Task AddAsync(Activity model);
 
-        Task<Activity> GetAsync(Guid id);
+        Task<Activity>GetAsync(Guid id);
 
-        Task<IEnumerable<Models.Activity>> BrowseAsync(Guid userId);
+        Task<IEnumerable<Activity>>BrowseAsync(Guid userId);
 
     }
 }

@@ -25,5 +25,12 @@ namespace MushroomCloud.Api.Controllers
             Console.WriteLine(command.Email);
             return Accepted($"Users/{command.Email}");
         }
+
+        [HttpPost("login")]
+        public async Task<IActionResult> Login([FromBody] AuthenticateUser command)
+        {
+            await _busClient.PublishAsync(command);
+            return Accepted($"Users/Login/{command.Email}");
+        }
     }
 }

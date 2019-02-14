@@ -35,7 +35,6 @@ namespace MushroomCloud.Services.Identity.Handlers
                 await _userService.RegisterAsync(command.Email, command.Password, command.Name);
                 await _busClient.PublishAsync(new UserCreated(command.Email, command.Name));
                 _logger.LogInformation($"User: '{command.Email}' was created with name: '{command.Name}'.");
-
                 return;
             }
             catch (MushroomCloudException ex)

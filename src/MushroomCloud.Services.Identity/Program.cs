@@ -11,6 +11,7 @@ namespace MushroomCloud.Services.Identity
             HostedService.Create<Startup>(args)
             .UseRabbitMq()
             .SubscribeToCommand<CreateUser>()
+            .SubscribeToCommand<AuthenticateUser>()
             .Build()
             .Run();        
         }

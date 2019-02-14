@@ -39,3 +39,4 @@ D:\PROJECTS\IValchev\MushroomCloudCity\tests\MushroomCloud.Services.Identity.Tes
 D:\PROJECTS\IValchev\MushroomCloudCity\tests\MushroomCloud.Services.Identity.Test\obj\Debug\netcoreapp2.1\MushroomCloud.Services.Identity.Test.AssemblyInfo.cs
 D:\PROJECTS\IValchev\MushroomCloudCity\tests\MushroomCloud.Services.Identity.Test\obj\Debug\netcoreapp2.1\MushroomCloud.Services.Identity.Test.dll
 D:\PROJECTS\IValchev\MushroomCloudCity\tests\MushroomCloud.Services.Identity.Test\obj\Debug\netcoreapp2.1\MushroomCloud.Services.Identity.Test.pdb
+D:\PROJECTS\IValchev\MushroomCloudCity\tests\MushroomCloud.Services.Identity.Test\obj\Debug\netcoreapp2.1\MushroomCloud.Services.Identity.Test.csprojAssemblyReference.cache
