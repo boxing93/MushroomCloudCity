@@ -15,6 +15,7 @@ using MushroomCloud.Api.Repositories;
 using MushroomCloud.Common.Auth;
 using MushroomCloud.Common.Commands;
 using MushroomCloud.Common.Commands.ActivitiesCommand;
+using MushroomCloud.Common.Emails;
 using MushroomCloud.Common.Events;
 using MushroomCloud.Common.Events.ActivityEvents;
 using MushroomCloud.Common.Mongo;
@@ -40,10 +41,9 @@ namespace MushroomCloud.Api
             services.AddMongoDb(Configuration);
             services.AddRabbitMq(Configuration);
             services.AddJwt(Configuration);
-            //services.AddScoped<IDatabaseInitializer, MongoInitializer>();
             services.AddSingleton<IEventHandler<ActivityCreated>,ActivityCreatedHandler>();
             services.AddScoped<IActivityRepository,ActivityRepository>();
-            // services.AddScoped<IActivityRepository, Repositories.ActivityRepository>();
+            services.AddEmailClient(Configuration);
             return services.BuildServiceProvider();
 
         }
