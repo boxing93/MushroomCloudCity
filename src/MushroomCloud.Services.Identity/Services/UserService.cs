@@ -1,4 +1,5 @@
-﻿using MushroomCloud.Common.Auth;
+﻿using Microsoft.AspNetCore.Identity;
+using MushroomCloud.Common.Auth;
 using MushroomCloud.Common.Exceptions;
 using MushroomCloud.Services.Activities.Domain.Services;
 using MushroomCloud.Services.Identity.Domain.Models;

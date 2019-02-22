@@ -13,7 +13,6 @@ namespace MushroomCloud.Common.Events.IdentityEvents
 
         protected CreateUserRejected()
         {
-
         }
 
         public CreateUserRejected(string email, string reason, string errorCode)

@@ -4,7 +4,7 @@ using System.Text;
 
 namespace MushroomCloud.Common.Events.IdentityEvents
 {
-    interface IRejectedEvent : IEvent
+    public interface IRejectedEvent : IEvent
     {
         string Reason { get; }
 
