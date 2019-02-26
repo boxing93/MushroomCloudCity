@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace MushroomCloud.Services.Identity.Domain.Repositories
 {
-    public interface IUserRepository
+    public interface IUserRepository<TUser> where TUser : class
     {
         Task<User> GetAsync(Guid id);
         Task<User> GetAsync(string email);

@@ -4,10 +4,8 @@ using System.Text;
 
 namespace MushroomCloud.Common.Commands.IdentityCommands
 {
-    public class AuthenticateUser : ICommand
+    public class AuthenticateUser : BaseCommand,ICommand
     {
-        public string Email { get; set; }
-        public string Password { get; set; }
 
     }
 }

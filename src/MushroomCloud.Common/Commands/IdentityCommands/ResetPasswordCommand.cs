@@ -1,7 +1,6 @@
 namespace MushroomCloud.Common.Commands.IdentityCommands
 {
-    public class ResetPasswordCommand : ICommand
+    public class ResetPasswordCommand : BaseCommand,ICommand
     {
-        public string Email {get; set;}
     }
 }

@@ -1,4 +1,6 @@
-﻿using MushroomCloud.Common.Exceptions;
+﻿using AspNetCore.Identity.MongoDbCore.Models;
+using MongoDbGenericRepository.Attributes;
+using MushroomCloud.Common.Exceptions;
 using MushroomCloud.Services.Activities.Domain.Services;
 using System;
 using System.Collections.Generic;
@@ -7,20 +9,21 @@ using System.Threading.Tasks;
 
 namespace MushroomCloud.Services.Identity.Domain.Models
 {
-    public class User
+    [CollectionName("Users")]
+    public class User : MongoIdentityUser<Guid>
     {
-        public Guid Id { get; protected set; }
-        public string Email { get; protected set; }
-        public string Name { get; protected set; }
+        // public Guid Id { get; protected set; }
+        // public string Email { get; protected set; }
+        // public string UserName { get; protected set; }
         public string Password { get; protected set; }
         public string Salt { get; protected set; }
         public DateTime CreatedAt { get; protected set; }
 
-        protected User()
+        public User() : base()
         {
         }
 
-        public User(string email,string name)
+        public User(string email,string name) : base(email,name)
         {
             if (string.IsNullOrWhiteSpace(email))
             {
@@ -34,7 +37,7 @@ namespace MushroomCloud.Services.Identity.Domain.Models
 
             Id = Guid.NewGuid();
             Email = email;
-            Name = name;
+            UserName = name;
             CreatedAt = DateTime.UtcNow;
         }
 
@@ -50,6 +53,7 @@ namespace MushroomCloud.Services.Identity.Domain.Models
 
         public bool ValidatePassword(string password, IEncrypter encrypter)
             => Password.Equals(encrypter.GetHash(password,Salt));
+
 
     }
 }

@@ -433,28 +433,28 @@
     "RawRabbit/2.0.0-rc5": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-aLepB2/IZ7S/NLryFEQfVUHbu4WuSlag2iFwWwt6ftmpVusZoUOHeQgFlXwljz9YgwNffegJ69jBUpz9AkvF4Q==",
+      "sha512": "sha512-4M9uGl7iXdM0HLoIvGWhUVt9kNjfxHXVJVfObo6VG4CyPL5p9a0KrqIQgfuH8oog0stMrxll0Gy+QYo8HWRy9A==",
       "path": "rawrabbit/2.0.0-rc5",
       "hashPath": "rawrabbit.2.0.0-rc5.nupkg.sha512"
     },
     "RawRabbit.DependencyInjection.ServiceCollection/2.0.0-rc5": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-UlLYQ7m4aAmDc3djuRFKHirkJBhF+PeP3k2JfaQLIi/yi6mSrSs4uqGuWWVjRXqMP5RxKPwzx4A2je2Ta9cg4Q==",
+      "sha512": "sha512-zrFH4cuCUcxRzfgjk5Pn/aGH2KCnznt78F/LuIXLw0p13y28TDOgZ06DjlJUX+Z/ufgseE4pa0ItjjpNP8BfdA==",
       "path": "rawrabbit.dependencyinjection.servicecollection/2.0.0-rc5",
       "hashPath": "rawrabbit.dependencyinjection.servicecollection.2.0.0-rc5.nupkg.sha512"
     },
     "RawRabbit.Operations.Publish/2.0.0-rc5": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-Oxc/k/ZlosIAkZx0vF9fhQyNsl08WkxO8czZYyYNcYiA2qNyL5TJ22M3muQ/V1DxQdsP7BpsCGKJOz0xAcg9Ow==",
+      "sha512": "sha512-4M7O4UsCRHxeIj7O35xGF73ijvg/ALR9ScWhWGIPIJGdoYFRh1k3jVRrba1e2ews04c7ctKKdtiBlWoHJBln9w==",
       "path": "rawrabbit.operations.publish/2.0.0-rc5",
       "hashPath": "rawrabbit.operations.publish.2.0.0-rc5.nupkg.sha512"
     },
     "RawRabbit.Operations.Subscribe/2.0.0-rc5": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-D9vYNhmwu87wNPDuOQ6HlZ17pHnWSlz/wjuIPKs78wWpkZ2pholcUYClmmnyz9xwck6kToxkQJvLHPVhZQhyNw==",
+      "sha512": "sha512-naD0qHa1w8MZj7/A670APTNG/mON9Q5UxdUHGU4j5GuIahk6muou0oUqUb1bRhInmKuP3H62uhnvLBb8fD7feg==",
       "path": "rawrabbit.operations.subscribe/2.0.0-rc5",
       "hashPath": "rawrabbit.operations.subscribe.2.0.0-rc5.nupkg.sha512"
     },

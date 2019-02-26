@@ -13,11 +13,11 @@ namespace MushroomCloud.Services.Identity.Services
 {
     public class UserService : IUserService
     {
-        private readonly IUserRepository _userRepository;
+        private readonly IUserRepository<User> _userRepository;
         private readonly IJwtHandler _jwtHandler;
         private readonly IEncrypter _encrypter;
 
-        public UserService(IUserRepository repository, IEncrypter encrypter, IJwtHandler jwtHandler)
+        public UserService(IUserRepository<User> repository, IEncrypter encrypter, IJwtHandler jwtHandler)
         {
             _jwtHandler = jwtHandler;
             _userRepository = repository;

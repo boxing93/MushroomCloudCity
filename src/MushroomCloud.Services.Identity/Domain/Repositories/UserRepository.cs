@@ -7,7 +7,8 @@ using MushroomCloud.Services.Identity.Domain.Models;
 
 namespace MushroomCloud.Services.Identity.Domain.Repositories
 {
-    public class UserRepository : IUserRepository
+    public class UserRepository<TUser> : IUserRepository<TUser>
+    where TUser : User
     {
         private readonly IMongoDatabase _database;
         public UserRepository(IMongoDatabase database)
