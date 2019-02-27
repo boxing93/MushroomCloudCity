@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Linq;
 using System.Threading.Tasks;
+using Microsoft.AspNetCore.Identity;
 using MongoDB.Driver;
 using MongoDB.Driver.Linq;
 using MushroomCloud.Services.Identity.Domain.Models;
@@ -28,8 +29,7 @@ namespace MushroomCloud.Services.Identity.Domain.Repositories
         public async Task<User> GetAsync(string email)
             => await Collection
             .AsQueryable()
-            .FirstOrDefaultAsync(x => x.Email == email);
-
+            .FirstOrDefaultAsync(x => x.Email == email);        
 
         private IMongoCollection<User> Collection
             => _database.GetCollection<User>("Users");

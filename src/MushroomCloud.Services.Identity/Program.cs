@@ -12,6 +12,7 @@ namespace MushroomCloud.Services.Identity
             .UseRabbitMq()
             .SubscribeToCommand<CreateUser>()
             .SubscribeToCommand<AuthenticateUser>()
+            .SubscribeToCommand<ResetPasswordCommand>()
             .Build()
             .Run();        
         }

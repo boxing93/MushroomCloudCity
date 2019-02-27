@@ -15,10 +15,10 @@ namespace MushroomCloud.Services.Identity.Domain.Models
         // public Guid Id { get; protected set; }
         // public string Email { get; protected set; }
         // public string UserName { get; protected set; }
-        public string Password { get; protected set; }
+        public string Password { get;  set; }
         public string Salt { get; protected set; }
         public DateTime CreatedAt { get; protected set; }
-
+        
         public User() : base()
         {
         }
@@ -53,7 +53,6 @@ namespace MushroomCloud.Services.Identity.Domain.Models
 
         public bool ValidatePassword(string password, IEncrypter encrypter)
             => Password.Equals(encrypter.GetHash(password,Salt));
-
 
     }
 }

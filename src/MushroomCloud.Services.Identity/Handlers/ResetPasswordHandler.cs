@@ -17,21 +17,24 @@ namespace MushroomCloud.Services.Identity.Handlers
         private readonly ILogger _logger;
         private readonly IBusClient _busClient;
         private readonly IUserService _userService;
+        private readonly UserManager<User> _userManager;
+
 
         public ResetPasswordHandler(IBusClient busClient,
             IUserService userService,
-            ILogger<CreateUser> logger)
+            ILogger<CreateUser> logger, UserManager<User> userManager)
         {
             _busClient = busClient;
             _userService = userService;
             _logger = logger;
+            _userManager = userManager;
         }
 
         public async Task HandleAsync(ResetPasswordCommand command)
         {
             _logger.LogInformation($"Reset user password with email: '{command.Email}'.");
             try
-            {
+            {   
                 await _busClient.PublishAsync(new PasswordReseted(command.Email));
                 _logger.LogInformation($"User password with Email: '{command.Email}' was reseted.");
                 return;
@@ -39,13 +42,13 @@ namespace MushroomCloud.Services.Identity.Handlers
             catch (MushroomCloudException ex)
             {
                 _logger.LogError(ex, ex.Message);
-                await _busClient.PublishAsync(new CreateUserRejected(command.Email,
+                await _busClient.PublishAsync(new ResetPasswordRejected(command.Email,
                     ex.Message, ex.Code));
             }
             catch (Exception ex)
             {
                 _logger.LogError(ex, ex.Message);
-                await _busClient.PublishAsync(new CreateUserRejected(command.Email,
+                await _busClient.PublishAsync(new ResetPasswordRejected(command.Email,
                     ex.Message, "error"));
             }
         }

@@ -16,12 +16,15 @@ namespace MushroomCloud.Services.Identity.Services
         private readonly IUserRepository<User> _userRepository;
         private readonly IJwtHandler _jwtHandler;
         private readonly IEncrypter _encrypter;
+        private readonly UserManager<User> _userManager;
 
-        public UserService(IUserRepository<User> repository, IEncrypter encrypter, IJwtHandler jwtHandler)
+
+        public UserService(IUserRepository<User> repository, IEncrypter encrypter, IJwtHandler jwtHandler, UserManager<User> userManager)
         {
             _jwtHandler = jwtHandler;
             _userRepository = repository;
             _encrypter = encrypter;
+            _userManager = userManager;
         }
 
         public async Task<JsonWebToken> LoginAsync(string email, string password)
@@ -49,8 +52,8 @@ namespace MushroomCloud.Services.Identity.Services
                     $"Email: '{email}' is already in use.");
             }
             user = new User(email, name);
-            user.SetPassword(password,_encrypter);
-            await _userRepository.AddAsync(user);
+            user.SetPassword(password, _encrypter);
+            await _userManager.CreateAsync(user, password);
         }
     }
 }
