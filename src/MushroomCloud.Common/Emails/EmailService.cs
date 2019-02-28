@@ -15,23 +15,26 @@ namespace MushroomCloud.Common.Emails
 
         public async Task SendEmailAsync(string email, string subject, string message)
         {
+            var emailOptions = new EmailOptions();
+            var section = _configuration.GetSection("email");
+            section.Bind(emailOptions);
             using (var client = new SmtpClient())
             {
                 var credential = new NetworkCredential
                 {
-                    UserName = _configuration["Email:Username"],
-                    Password = _configuration["Email:Password"]
+                    UserName = emailOptions.Username,
+                    Password = emailOptions.Password
                 };
 
                 client.Credentials = credential;
-                client.Host = _configuration["Email:Host"];
-                client.Port = int.Parse(_configuration["Email:Port"]);
+                client.Host = emailOptions.Host;
+                client.Port = emailOptions.Port;
                 client.EnableSsl = true;
 
                 using (var emailMessage = new MailMessage())
                 {
                     emailMessage.To.Add(new MailAddress(email));
-                    emailMessage.From = new MailAddress(_configuration["Email:Username"]);
+                    emailMessage.From = new MailAddress(emailOptions.Username);
                     emailMessage.Subject = subject;
                     emailMessage.Body = message;
                     client.Send(emailMessage);

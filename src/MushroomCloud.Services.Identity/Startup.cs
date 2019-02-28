@@ -15,6 +15,7 @@ using MushroomCloud.Common.Auth;
 using MushroomCloud.Common.Commands;
 using MushroomCloud.Common.Commands.IdentityCommands;
 using MushroomCloud.Common.Emails;
+using MushroomCloud.Common.Exceptions;
 using MushroomCloud.Common.Mongo;
 using MushroomCloud.Common.RabbitMq;
 using MushroomCloud.Services.Activities.Domain.Services;
@@ -68,13 +69,10 @@ namespace MushroomCloud.Services.Identity
             {
                 app.UseHsts();
             }
-            // Services.AddDefaultIdentity<IdentityUser>(config =>
-            // {
-            //     config.SignIn.RequireConfirmedEmail = true;
-            // });
+
             app.UseAuthentication();
             app.ApplicationServices.GetService<IDatabaseInitializer>().InitializeAsync();
-
+            app.ConfigureExceptionHandler();
             app.UseHttpsRedirection();
             app.UseMvc();
         }

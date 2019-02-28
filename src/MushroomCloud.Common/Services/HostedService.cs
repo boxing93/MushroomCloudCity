@@ -28,7 +28,7 @@ namespace MushroomCloud.Common.Services
         {
             Console.Title = typeof(TStartup).Namespace;
             var config = new ConfigurationBuilder()
-                .AddEnvironmentVariables().AddCommandLine(args).Build();
+                .AddEnvironmentVariables().AddCommandLine(args).AddJsonFile("appsettings.json", optional: true).Build();
 
             var webHostBuilder = WebHost.CreateDefaultBuilder(args)
             .UseConfiguration(config).UseStartup<TStartup>();

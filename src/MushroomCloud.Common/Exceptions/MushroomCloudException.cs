@@ -1,18 +1,17 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
+﻿using Newtonsoft.Json;
+using Newtonsoft.Json.Linq;
+using System;
 namespace MushroomCloud.Common.Exceptions
 {
    public class MushroomCloudException : Exception
    {
-        public string Code { get; }
+        public string Code { get; set; }
 
         public MushroomCloudException()
         {
         }
 
-        public MushroomCloudException(string code)
+        public MushroomCloudException(string code,string message)
         {
             Code = code;
         }
@@ -35,5 +34,16 @@ namespace MushroomCloud.Common.Exceptions
         {
             Code = code;
         }
+        public class ExceptionDetails
+        {
+            public string Code { get; set; }
+            public string MushroomCloudExceptionMessage { get; set; }
+
+            public override string ToString()
+            {
+                return JsonConvert.SerializeObject(this);
+            }
+        }
     }
+
 }

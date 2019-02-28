@@ -46,64 +46,43 @@ namespace MushroomCloud.Services.Identity.Controllers
         [HttpPost("ForgotPassword")]
         public async Task<IActionResult> ResetPasswordLink([FromBody]ResetPasswordCommand command)
         {
-            try
+            var user = await _userManager.FindByEmailAsync(command.Email);
+
+            if (ModelState.IsValid)
             {
-                var user = await _userManager.FindByEmailAsync(command.Email);
+                if (user == null || !(await _userManager.IsEmailConfirmedAsync(user))) throw new MushroomCloudException("asassasassa");
 
-                if (ModelState.IsValid)
-                {
-                    if (user == null || !(await _userManager.IsEmailConfirmedAsync(user))) return NotFound();
+                _token = null;
+                var token = await _userManager.GenerateEmailConfirmationTokenAsync(user);
+                _token = token;
 
-                    _token = null;
-                    var token = await _userManager.GenerateEmailConfirmationTokenAsync(user);
-                    _token = token;
+                var callbackUrl = Url.Action("ForgotPassword", "Account", new { userId = user.Id, code = token }, protocol: HttpContext.Request.Scheme);
+                _logger.LogError($"User: '{user.Email}' was created with name: '{user.UserName}'.");
 
-                    var callbackUrl = Url.Action("ResetPassword", "Account", new { userId = user.Id, code = token }, protocol: HttpContext.Request.Scheme);
-                    _logger.LogError($"User: '{user.Email}' was created with name: '{user.UserName}'.");
-
-                    await _emailService.SendEmailAsync(user.Email, "Reset Password",
-               $"Please reset your password by clicking here: <a href='{callbackUrl}'>link</a>");
-                    await _busClient.PublishAsync(command);
-                    return View("ForgotPasswordConfirmation");
-                }
+                await _emailService.SendEmailAsync(user.Email, "Reset Password",
+           $"Please reset your password by clicking here: <a href='{callbackUrl}'>link</a>");
+                await _busClient.PublishAsync(command);
+                return View("ForgotPasswordConfirmation");
             }
-            catch (Exception e)
-            {
-                Console.WriteLine(e.Message);
-                throw;
-            }
+
             return Accepted();
         }
+
         [HttpPost("Register")]
         [AllowAnonymous]
         public async Task<IActionResult> Register([FromBody]CreateUser command)
         {
-            try
-            {
-                await _userService.RegisterAsync(command.Email,command.Password,command.Email);
-                return Accepted($"User: {command.Email}, was registered!");
-
-            }
-            catch (Exception e)
-            {
-                Console.WriteLine(e.Message);
-                throw;
-            }
-
+            await _userService.RegisterAsync(command.Email, command.Password, command.Email);
+            return Accepted($"User: {command.Email}, was registered!");
         }
+
         //To Do: Logger
         [HttpGet("ForgotPassword")]
         [AllowAnonymous]
         public async Task<IActionResult> ForgotPassword()
         {
+            await Task.CompletedTask;
             return View();
-        }
-
-        [HttpGet("test")]
-        public IActionResult Test()
-        {
-            _logger.LogInformation($"asdsdadadasdsaasdadsdsadsadsadsa");
-            return Accepted();
         }
     }
 }

@@ -3,6 +3,8 @@ D:\PROJECTS\IValchev\MushroomCloudCity\src\MushroomCloud.Services.Identity\bin\D
 D:\PROJECTS\IValchev\MushroomCloudCity\src\MushroomCloud.Services.Identity\bin\Debug\netcoreapp2.2\MushroomCloud.Services.Identity.runtimeconfig.dev.json
 D:\PROJECTS\IValchev\MushroomCloudCity\src\MushroomCloud.Services.Identity\bin\Debug\netcoreapp2.2\MushroomCloud.Services.Identity.dll
 D:\PROJECTS\IValchev\MushroomCloudCity\src\MushroomCloud.Services.Identity\bin\Debug\netcoreapp2.2\MushroomCloud.Services.Identity.pdb
+D:\PROJECTS\IValchev\MushroomCloudCity\src\MushroomCloud.Services.Identity\bin\Debug\netcoreapp2.2\MushroomCloud.Services.Identity.Views.dll
+D:\PROJECTS\IValchev\MushroomCloudCity\src\MushroomCloud.Services.Identity\bin\Debug\netcoreapp2.2\MushroomCloud.Services.Identity.Views.pdb
 D:\PROJECTS\IValchev\MushroomCloudCity\src\MushroomCloud.Services.Identity\bin\Debug\netcoreapp2.2\MushroomCloud.Common.dll
 D:\PROJECTS\IValchev\MushroomCloudCity\src\MushroomCloud.Services.Identity\bin\Debug\netcoreapp2.2\MushroomCloud.Common.pdb
 D:\PROJECTS\IValchev\MushroomCloudCity\src\MushroomCloud.Services.Identity\obj\Debug\netcoreapp2.2\MushroomCloud.Services.Identity.csprojAssemblyReference.cache
@@ -11,7 +13,14 @@ D:\PROJECTS\IValchev\MushroomCloudCity\src\MushroomCloud.Services.Identity\obj\D
 D:\PROJECTS\IValchev\MushroomCloudCity\src\MushroomCloud.Services.Identity\obj\Debug\netcoreapp2.2\MushroomCloud.Services.Identity.RazorAssemblyInfo.cs
 D:\PROJECTS\IValchev\MushroomCloudCity\src\MushroomCloud.Services.Identity\obj\Debug\netcoreapp2.2\MushroomCloud.Services.Identity.AssemblyInfoInputs.cache
 D:\PROJECTS\IValchev\MushroomCloudCity\src\MushroomCloud.Services.Identity\obj\Debug\netcoreapp2.2\MushroomCloud.Services.Identity.AssemblyInfo.cs
+D:\PROJECTS\IValchev\MushroomCloudCity\src\MushroomCloud.Services.Identity\obj\Debug\netcoreapp2.2\MushroomCloud.Services.Identity.TagHelpers.input.cache
+D:\PROJECTS\IValchev\MushroomCloudCity\src\MushroomCloud.Services.Identity\obj\Debug\netcoreapp2.2\MushroomCloud.Services.Identity.TagHelpers.output.cache
+D:\PROJECTS\IValchev\MushroomCloudCity\src\MushroomCloud.Services.Identity\obj\Debug\netcoreapp2.2\MushroomCloud.Services.Identity.RazorCoreGenerate.cache
+D:\PROJECTS\IValchev\MushroomCloudCity\src\MushroomCloud.Services.Identity\obj\Debug\netcoreapp2.2\Razor\Views\Account\ForgotPassword.g.cshtml.cs
+D:\PROJECTS\IValchev\MushroomCloudCity\src\MushroomCloud.Services.Identity\obj\Debug\netcoreapp2.2\Razor\Views\Account\ForgotPasswordConfirmation.g.cshtml.cs
 D:\PROJECTS\IValchev\MushroomCloudCity\src\MushroomCloud.Services.Identity\obj\Debug\netcoreapp2.2\MushroomCloud.Services.Identity.RazorTargetAssemblyInfo.cache
+D:\PROJECTS\IValchev\MushroomCloudCity\src\MushroomCloud.Services.Identity\obj\Debug\netcoreapp2.2\MushroomCloud.Services.Identity.RazorTargetAssemblyInfo.cs
+D:\PROJECTS\IValchev\MushroomCloudCity\src\MushroomCloud.Services.Identity\obj\Debug\netcoreapp2.2\MushroomCloud.Services.Identity.Views.pdb
 D:\PROJECTS\IValchev\MushroomCloudCity\src\MushroomCloud.Services.Identity\obj\Debug\netcoreapp2.2\MushroomCloud.Services.Identity.csproj.CopyComplete
 D:\PROJECTS\IValchev\MushroomCloudCity\src\MushroomCloud.Services.Identity\obj\Debug\netcoreapp2.2\MushroomCloud.Services.Identity.dll
 D:\PROJECTS\IValchev\MushroomCloudCity\src\MushroomCloud.Services.Identity\obj\Debug\netcoreapp2.2\MushroomCloud.Services.Identity.pdb
