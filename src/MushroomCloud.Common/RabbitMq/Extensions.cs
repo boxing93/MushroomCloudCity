@@ -35,7 +35,7 @@ namespace MushroomCloud.Common.RabbitMq
             section.Bind(options);
             var client = RawRabbitFactory.CreateSingleton(new RawRabbitOptions
             {
-              ClientConfiguration = options  
+                ClientConfiguration = options
             });
             service.AddSingleton<IBusClient>(c => client);
         }

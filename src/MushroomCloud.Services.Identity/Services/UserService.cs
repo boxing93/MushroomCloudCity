@@ -27,15 +27,30 @@ namespace MushroomCloud.Services.Identity.Services
             _userManager = userManager;
         }
 
+        public async Task<IdentityResult> ConfirmEmailAsync(string userId, string code)
+        {
+            if (userId == null || code == null)
+            {
+                throw new MushroomCloudException("invalid_credentials", $"userId and code cannot be null.");
+            }
+            var user = await _userManager.FindByIdAsync(userId);
+            if (user == null)
+            {
+                throw new MushroomCloudException("invalid_credentials",$"user is null.");
+            }
+            return await _userManager.ConfirmEmailAsync(user, code);
+        }
+
         public async Task<JsonWebToken> LoginAsync(string email, string password)
         {
+            
             var user = await _userRepository.GetAsync(email);
             if (user == null)
             {
                 throw new MushroomCloudException("invalid_credentials",
                     $"Invalid credentials.");
             }
-            if (!user.ValidatePassword(password, _encrypter))
+            if (await _userManager.CheckPasswordAsync(user, user.Password))/*(!user.ValidatePassword(password, _encrypter))*/
             {
                 throw new MushroomCloudException("invalid_credentials",
                     $"Invalid credentials.");
@@ -55,5 +70,7 @@ namespace MushroomCloud.Services.Identity.Services
             user.SetPassword(password, _encrypter);
             await _userManager.CreateAsync(user, password);
         }
+
+        
     }
 }

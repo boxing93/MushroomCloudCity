@@ -1,4 +1,5 @@
-﻿using MushroomCloud.Common.Auth;
+﻿using Microsoft.AspNetCore.Identity;
+using MushroomCloud.Common.Auth;
 using MushroomCloud.Services.Identity.Domain.Models;
 using System;
 using System.Collections.Generic;
@@ -11,5 +12,7 @@ namespace MushroomCloud.Services.Identity.Services
     {
         Task RegisterAsync(string email, string password, string name);
         Task<JsonWebToken> LoginAsync(string email, string password);
+
+        Task<IdentityResult> ConfirmEmailAsync(string userId,string code);
     }
 }

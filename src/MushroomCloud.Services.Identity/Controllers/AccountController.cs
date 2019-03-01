@@ -24,9 +24,9 @@ namespace MushroomCloud.Services.Identity.Controllers
         private readonly UserManager<User> _userManager;
         private readonly ILogger _logger;
         private readonly IEmailService _emailService;
-        private string _token = null;
+        private readonly SignInManager<User> _signInManager;
 
-        public AccountController(IUserService userService, IBusClient busClient, IUserRepository<User> userRepository, ILogger<AccountController> logger, IEmailService emailService, UserManager<User> userManager)
+        public AccountController(IUserService userService, IBusClient busClient, IUserRepository<User> userRepository, ILogger<AccountController> logger, IEmailService emailService, UserManager<User> userManager, SignInManager<User> signInManager)
         {
             _busClient = busClient;
             _userService = userService;
@@ -34,9 +34,11 @@ namespace MushroomCloud.Services.Identity.Controllers
             _logger = logger;
             _emailService = emailService;
             _userManager = userManager;
+            _signInManager = signInManager;
         }
 
         [HttpPost("login")]
+        //[ValidateAntiForgeryToken]
         public async Task<IActionResult> Login([FromBody] AuthenticateUser command)
         {
             await _busClient.PublishAsync(command);
@@ -44,24 +46,21 @@ namespace MushroomCloud.Services.Identity.Controllers
         }
         //To Do: Logger
         [HttpPost("ForgotPassword")]
+        //[ValidateAntiForgeryToken]
         public async Task<IActionResult> ResetPasswordLink([FromBody]ResetPasswordCommand command)
         {
             var user = await _userManager.FindByEmailAsync(command.Email);
 
             if (ModelState.IsValid)
             {
-                if (user == null || !(await _userManager.IsEmailConfirmedAsync(user))) throw new MushroomCloudException("asassasassa");
-
-                _token = null;
+                if (user == null /*|| !(await _userManager.IsEmailConfirmedAsync(user))*/) throw new MushroomCloudException("User not found or not confirmed!");
                 var token = await _userManager.GenerateEmailConfirmationTokenAsync(user);
-                _token = token;
 
                 var callbackUrl = Url.Action("ForgotPassword", "Account", new { userId = user.Id, code = token }, protocol: HttpContext.Request.Scheme);
                 _logger.LogError($"User: '{user.Email}' was created with name: '{user.UserName}'.");
-
+                await _busClient.PublishAsync(command);
                 await _emailService.SendEmailAsync(user.Email, "Reset Password",
            $"Please reset your password by clicking here: <a href='{callbackUrl}'>link</a>");
-                await _busClient.PublishAsync(command);
                 return View("ForgotPasswordConfirmation");
             }
 
@@ -69,6 +68,7 @@ namespace MushroomCloud.Services.Identity.Controllers
         }
 
         [HttpPost("Register")]
+        [ValidateAntiForgeryToken]
         [AllowAnonymous]
         public async Task<IActionResult> Register([FromBody]CreateUser command)
         {
@@ -79,11 +79,21 @@ namespace MushroomCloud.Services.Identity.Controllers
         //To Do: Logger
         [HttpGet("ForgotPassword")]
         [AllowAnonymous]
-        public async Task<IActionResult> ForgotPassword()
+        public async Task<IActionResult> ForgotPassword(string userId,string code)
         {
-            await Task.CompletedTask;
-            return View();
+            var result = await _userService.ConfirmEmailAsync(userId,code);
+            return View(result.Succeeded ? "ForgotPassword" : "Error");
         }
+
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public async Task<IActionResult> LogOff()
+        {
+            await _signInManager.SignOutAsync();
+            _logger.LogInformation(4, "User logged out.");
+            return RedirectToAction(nameof(HomeController.Index), "Home");
+        }
+
     }
 }
 

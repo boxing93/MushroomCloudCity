@@ -1,5 +1,4 @@
-﻿using MushroomCloud.Common.Commands.ActivitiesCommand;
-using MushroomCloud.Common.Commands.IdentityCommands;
+﻿using MushroomCloud.Common.Commands.IdentityCommands;
 using MushroomCloud.Common.Services;
 
 namespace MushroomCloud.Services.Identity
@@ -13,8 +12,9 @@ namespace MushroomCloud.Services.Identity
             .SubscribeToCommand<CreateUser>()
             .SubscribeToCommand<AuthenticateUser>()
             .SubscribeToCommand<ResetPasswordCommand>()
+            .SubscribeToCommand<AuthenticateUser>()
             .Build()
-            .Run();        
+            .RunAsync();        
         }
     }
 }

@@ -44,6 +44,8 @@ namespace MushroomCloud.Services.Identity
             services.AddJwt(Configuration);
             services.AddScoped<IJwtHandler, JwtHandler>();
             services.AddScoped<ICommandHandler<CreateUser>,CreateUserHandler>();
+            services.AddScoped<ICommandHandler<AuthenticateUser>, AuthenticateUserHandler>();
+            services.AddScoped<ICommandHandler<ResetPasswordCommand>, ResetPasswordHandler>();
             services.AddScoped<IUserService, UserService>();
             services.AddScoped<IEncrypter, Encrypter>();
             services.AddScoped<IUserRepository<User>, UserRepository<User>>();
