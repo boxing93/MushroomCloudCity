@@ -7,5 +7,6 @@ namespace MushroomCloud.Common.Auth
     public interface IJwtHandler
     {
         JsonWebToken Create(Guid userId);
+        JsonWebTokenPayload GetTokenPayload(string accessToken);
     }
 }

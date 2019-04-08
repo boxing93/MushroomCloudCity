@@ -17,7 +17,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MushroomCloud.Common.Test",
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MushroomCloud.Services.Identity.Test", "tests\MushroomCloud.Services.Identity.Test\MushroomCloud.Services.Identity.Test.csproj", "{201DD4FB-E9FC-45CB-B1A2-76E14840539E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MushroomCloud.Client", "src\MushroomCloud.Client\MushroomCloud.Client.csproj", "{DDFF3CA7-3C00-4AC8-9ACE-580752F6FFC7}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MushroomCloud.Client", "src\MushroomCloud.Client\MushroomCloud.Client.csproj", "{DDFF3CA7-3C00-4AC8-9ACE-580752F6FFC7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MushroomCloud.Services.SignalR", "MushroomCloud.Services.SignalR\MushroomCloud.Services.SignalR.csproj", "{CC1BAE12-AF86-436F-8669-9E6A79008437}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -89,6 +91,18 @@ Global
 		{DDFF3CA7-3C00-4AC8-9ACE-580752F6FFC7}.Release|x64.Build.0 = Release|Any CPU
 		{DDFF3CA7-3C00-4AC8-9ACE-580752F6FFC7}.Release|x86.ActiveCfg = Release|Any CPU
 		{DDFF3CA7-3C00-4AC8-9ACE-580752F6FFC7}.Release|x86.Build.0 = Release|Any CPU
+		{CC1BAE12-AF86-436F-8669-9E6A79008437}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CC1BAE12-AF86-436F-8669-9E6A79008437}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CC1BAE12-AF86-436F-8669-9E6A79008437}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{CC1BAE12-AF86-436F-8669-9E6A79008437}.Debug|x64.Build.0 = Debug|Any CPU
+		{CC1BAE12-AF86-436F-8669-9E6A79008437}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{CC1BAE12-AF86-436F-8669-9E6A79008437}.Debug|x86.Build.0 = Debug|Any CPU
+		{CC1BAE12-AF86-436F-8669-9E6A79008437}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CC1BAE12-AF86-436F-8669-9E6A79008437}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CC1BAE12-AF86-436F-8669-9E6A79008437}.Release|x64.ActiveCfg = Release|Any CPU
+		{CC1BAE12-AF86-436F-8669-9E6A79008437}.Release|x64.Build.0 = Release|Any CPU
+		{CC1BAE12-AF86-436F-8669-9E6A79008437}.Release|x86.ActiveCfg = Release|Any CPU
+		{CC1BAE12-AF86-436F-8669-9E6A79008437}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -99,6 +113,7 @@ Global
 		{35C6B282-E704-412C-8ED3-1EBDE0DC58F7} = {0D304275-852E-4C9A-BA16-869F822DAC5F}
 		{201DD4FB-E9FC-45CB-B1A2-76E14840539E} = {0D304275-852E-4C9A-BA16-869F822DAC5F}
 		{DDFF3CA7-3C00-4AC8-9ACE-580752F6FFC7} = {4B0AE175-3C0D-48C8-9BA4-0DD4A6D936B2}
+		{CC1BAE12-AF86-436F-8669-9E6A79008437} = {4B0AE175-3C0D-48C8-9BA4-0DD4A6D936B2}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {0398C312-F434-48A8-8B79-5664AF25A057}

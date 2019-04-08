@@ -3,6 +3,8 @@ using Microsoft.IdentityModel.Tokens;
 using System;
 using System.Collections.Generic;
 using System.IdentityModel.Tokens.Jwt;
+using System.Linq;
+using System.Security.Claims;
 using System.Text;
 
 namespace MushroomCloud.Common.Auth
@@ -29,6 +31,14 @@ namespace MushroomCloud.Common.Auth
                 IssuerSigningKey = _issuerSigningKey
             };
         }
+        private static readonly ISet<string> DefaultClaims = new HashSet<string>
+        {
+            JwtRegisteredClaimNames.Sub,
+            JwtRegisteredClaimNames.UniqueName,
+            JwtRegisteredClaimNames.Jti,
+            JwtRegisteredClaimNames.Iat,
+            ClaimTypes.Role,
+        };
 
         public JsonWebToken Create(Guid userId)
         {
@@ -52,6 +62,25 @@ namespace MushroomCloud.Common.Auth
             {
                 Token = token,
                 Expires = exp
+            };
+        }
+
+        public JsonWebTokenPayload GetTokenPayload(string accessToken)
+        {
+            _jwtSecurityTokenHandler.ValidateToken(accessToken, _tokenValidationParameters,
+                out var validatedSecurityToken);
+            if (!(validatedSecurityToken is JwtSecurityToken jwt))
+            {
+                return null;
+            }
+
+            return new JsonWebTokenPayload
+            {
+                Subject = jwt.Subject,
+                Role = jwt.Claims.SingleOrDefault(x => x.Type == ClaimTypes.Role)?.Value,
+                Expires = jwt.ValidTo,
+                Claims = jwt.Claims.Where(x => !DefaultClaims.Contains(x.Type))
+                    .ToDictionary(k => k.Type, v => v.Value)
             };
         }
     }
